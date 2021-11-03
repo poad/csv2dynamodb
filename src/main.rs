@@ -4,6 +4,7 @@ use aws_sdk_dynamodb::{Client as DynamoDB, Error, Region, PKG_VERSION, Blob};
 use aws_sdk_dynamodb::model::AttributeValue;
 use structopt::StructOpt;
 use regex::Regex;
+use tracing::{info, debug};
 use csv2dynamodb::read_csv;
 
 #[derive(Debug, StructOpt)]
@@ -39,12 +40,11 @@ async fn main() -> Result<(), Error> {
         let records = csv.records;
 
         if verbose {
-            println!("DynamoDB client version: {}", PKG_VERSION);
-            println!(
+            tracing::info!("DynamoDB client version: {}", PKG_VERSION);
+            tracing::info!(
                 "Region:                  {}",
                 shared_config.region().unwrap()
             );
-            println!();
         }
         let client = DynamoDB::new(&shared_config);
         let empty = &String::from("");
@@ -73,16 +73,16 @@ async fn main() -> Result<(), Error> {
                         _ => AttributeValue::S(value.to_string()),
                     };
                     let header_value = header.as_str().replace(caps.unwrap(), "").trim_end().to_string();
-                    // println!("Header {:?} {:?}", header_value, caps.unwrap());
+                    tracing::debug!("Header {:?} {:?}", header_value, caps.unwrap());
                     attributes.insert(header_value.to_string(), attr_value);
                 });
-            // println!("{:?}", attributes);
+            tracing::debug!("{:?}", attributes);
             let request = client
                 .put_item()
                 .table_name(&table)
                 .set_item(Some(attributes));
 
-            println!("Executing request [{:?}] to add item...", request);
+            tracing::debug!("Executing request [{:?}] to add item...", request);
 
             request.send().await?;
         }
