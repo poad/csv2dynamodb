@@ -58,10 +58,10 @@ async fn main() -> Result<(), Error> {
                         .map(|c| c.get(0).unwrap().as_str())
                         .or(Some("(S)"));
                     let attr_type = Regex::new(r"[A-Z]+")
-                            .unwrap()
-                            .captures(caps.unwrap())
-                            .map(|c| c.get(0).unwrap().as_str())
-                            .unwrap();
+                        .unwrap()
+                        .captures(caps.unwrap())
+                        .map(|c| c.get(0).unwrap().as_str())
+                        .unwrap();
                     let value = record.get(header.as_str()).unwrap_or(empty);
                     let attr_value = match attr_type {
                         "N" => AttributeValue::N(value.to_string()),
