@@ -8,6 +8,10 @@ on:
 env:
   CARGO_TERM_COLOR: always
 
+permissions:
+  id-token: write
+  contents: write 
+
 jobs:
   build:
 
@@ -20,6 +24,10 @@ jobs:
           - { os: macOS-11, target: 'x86_64-apple-darwin', suffix: '-mac-x86_64' }
           - { os: ubuntu-20.04, target: 'x86_64-unknown-linux-gnu', suffix: '-linux-x86_64' }
           - { os: ubuntu-20.04, target: 'x86_64-unknown-linux-musl', suffix: '-linux-muls-x86_64' }
+          # - { os: windows-latest, target: 'arch64-pc-windows-msvc', suffix: '-linux-muls-arch64' }
+          # - { os: macOS-11, target: 'aarch64-apple-darwin', suffix: '-mac-arch64' }
+          # - { os: ubuntu-20.04, target: 'aarch64-unknown-linux-gnu', suffix: '-linux-arch64' }
+          # - { os: ubuntu-20.04, target: 'aarch64-unknown-linux-musl', suffix: '-linux-musl-arch64' }
 
     steps:
     - name: Update Rust toolchain
@@ -29,13 +37,15 @@ jobs:
     - uses: actions/checkout@v2
     - name: Build
       run: cargo build --verbose --release
-    - name: Copy
-      run: cp target/release/csv2dynamodb target/release/csv2dynamodb${{ matrix.config.suffix }}
+    - name: Zip archive
+      run: |
+        cp target/release/csv2dynamodb ./csv2dynamodb
+        zip csv2dynamodb${{ matrix.config.suffix }}.zip csv2dynamodb
 
     - name: Release
       uses: softprops/action-gh-release@v1
       if: startsWith(github.ref, 'refs/tags/')
       with:
         files: |
-          target/release/csv2dynamodb${{ matrix.config.suffix }}
+          csv2dynamodb${{ matrix.config.suffix }}.zip
           LICENSE
