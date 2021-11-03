@@ -58,10 +58,10 @@ async fn main() -> Result<(), Error> {
                         .map(|c| c.get(0).unwrap().as_str())
                         .or(Some("(S)"));
                     let attr_type = Regex::new(r"[A-Z]+")
-                            .unwrap()
-                            .captures(caps.unwrap())
-                            .map(|c| c.get(0).unwrap().as_str())
-                            .unwrap();
+                        .unwrap()
+                        .captures(caps.unwrap())
+                        .map(|c| c.get(0).unwrap().as_str())
+                        .unwrap();
                     let value = record.get(header.as_str()).unwrap_or(empty);
                     let attr_value = match attr_type {
                         "N" => AttributeValue::N(value.to_string()),
@@ -72,11 +72,11 @@ async fn main() -> Result<(), Error> {
                         "SS" => AttributeValue::Ss(value.to_string().split("'").map(|v|v.to_string()).collect()),
                         _ => AttributeValue::S(value.to_string()),
                     };
-                    let header_value = Regex::new(r"[A-Z]+").unwrap()
-                        .captures(header.as_str()).map_or(header.as_str(),|cap| cap.get(0).unwrap().as_str());
+                    let header_value = header.as_str().replace(caps.unwrap(), "").trim_end().to_string();
+                    // println!("Header {:?} {:?}", header_value, caps.unwrap());
                     attributes.insert(header_value.to_string(), attr_value);
                 });
-            println!("{:?}", attributes);
+            // println!("{:?}", attributes);
             let request = client
                 .put_item()
                 .table_name(&table)
@@ -89,4 +89,3 @@ async fn main() -> Result<(), Error> {
     }
     Ok(())
 }
-
