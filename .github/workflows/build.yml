@@ -11,6 +11,10 @@ on:
 env:
   CARGO_TERM_COLOR: always
 
+permissions:
+  id-token: write
+  contents: write 
+
 jobs:
   build:
 
@@ -23,18 +27,10 @@ jobs:
           - { os: macOS-11, target: 'x86_64-apple-darwin' }
           - { os: ubuntu-20.04, target: 'x86_64-unknown-linux-gnu' }
           - { os: ubuntu-20.04, target: 'x86_64-unknown-linux-musl' }
-    # strategy:
-    #   matrix:
-    #     target: [
-    #       x86_64-pc-windows-msvc,
-    #       x86_64-apple-darwin,
-    #       x86_64-unknown-linux-gnu,
-    #       x86_64-unknown-linux-musl,
-    #       # aarch64-pc-windows-msvc,
-    #       # aarch64-apple-darwin,
-    #       # aarch64-unknown-linux-gnu,
-    #       # aarch64-unknown-linux-musl
-    #     ]
+          # - { os: windows-latest, target: 'arch64-pc-windows-msvc' }
+          # - { os: macOS-11, target: 'aarch64-apple-darwin' }
+          # - { os: ubuntu-20.04, target: 'aarch64-unknown-linux-gnu' }
+          # - { os: ubuntu-20.04, target: 'aarch64-unknown-linux-musl' }
 
     steps:
     - name: Add cross build targets
@@ -42,7 +38,7 @@ jobs:
     - name: Update Rust toolchain
       run: rustup update
     - name: Install cross
-      run: cargo install cross 
+      run: cargo install cross
     - uses: actions/checkout@v2
     - name: Build
       run: cargo build --verbose
