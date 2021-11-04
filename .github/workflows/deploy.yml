@@ -39,6 +39,7 @@ jobs:
       run: cargo build --verbose --release
     - name: Zip archive
       run: |
+        ls target/release/
         cp target/release/csv2dynamodb ./csv2dynamodb
         zip csv2dynamodb${{ matrix.config.suffix }}.zip csv2dynamodb
 
