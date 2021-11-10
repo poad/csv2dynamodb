@@ -11,6 +11,7 @@ on:
 env:
   CARGO_TERM_COLOR: always
   AWS_REGION: us-west-2
+  cache-key: GitHubActions-auth-${{ github.run_id }}-${{ github.run_attempt }}
 
 permissions:
   id-token: write
@@ -45,6 +46,7 @@ jobs:
         role-to-assume: ${{ secrets.AWS_OIDC_ROLE_ARN }}
         role-session-name: GitHubActions
         aws-region: ${{ env.AWS_REGION }}
+        cache-key: ${{ env.cache-key }}
     - name: Create for testing table
       env:
         TABLE_NAME: ${{ steps.gen-table-name.outputs.table }}
@@ -64,6 +66,7 @@ jobs:
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY }}
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: us-west-2
+        cache-key: ${{ env.cache-key }}
     - name: Update Rust toolchain
       run: rustup update
     - uses: actions/checkout@v2
@@ -94,6 +97,7 @@ jobs:
         role-to-assume: ${{ secrets.AWS_OIDC_ROLE_ARN }}
         role-session-name: GitHubActions
         aws-region: ${{ env.AWS_REGION }}
+        cache-key: ${{ env.cache-key }}
     - name: Remove for testing table
       env:
         TABLE_NAME: ${{ needs.setup.outputs.table }}
