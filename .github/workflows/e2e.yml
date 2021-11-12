@@ -5,13 +5,13 @@ on:
     branches: [ main ]
   pull_request:
     branches: [ main ]
+  pull_request_target:
 
   workflow_dispatch:
 
 env:
   CARGO_TERM_COLOR: always
   AWS_REGION: us-west-2
-  cache-key: GitHubActions-auth-${{ github.run_id }}-${{ github.run_attempt }}
 
 permissions:
   id-token: write
@@ -46,7 +46,6 @@ jobs:
         role-to-assume: ${{ secrets.AWS_OIDC_ROLE_ARN }}
         role-session-name: GitHubActions
         aws-region: ${{ env.AWS_REGION }}
-        cache-key: ${{ env.cache-key }}
     - name: Create for testing table
       env:
         TABLE_NAME: ${{ steps.gen-table-name.outputs.table }}
@@ -97,7 +96,6 @@ jobs:
         role-to-assume: ${{ secrets.AWS_OIDC_ROLE_ARN }}
         role-session-name: GitHubActions
         aws-region: ${{ env.AWS_REGION }}
-        cache-key: ${{ env.cache-key }}
     - name: Remove for testing table
       env:
         TABLE_NAME: ${{ needs.setup.outputs.table }}
