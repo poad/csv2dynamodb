@@ -754,18 +754,6 @@
     jest-util "^27.4.0"
     slash "^3.0.0"
 
-"@jest/console@^27.4.0":
-  version "27.4.0"
-  resolved "https://registry.yarnpkg.com/@jest/console/-/console-27.4.0.tgz#7b3fd8de361da5366357ecda3c4d966dfdf03374"
-  integrity sha512-2m7Xwcd1zTWtai5DCl+b0TAfoH8p5uqUoKmfzJCAfCrIwoJAf3xB+4nx3eKEGoyNfg5oavrh3gjbZ1n5z5eh4Q==
-  dependencies:
-    "@jest/types" "^27.4.0"
-    "@types/node" "*"
-    chalk "^4.0.0"
-    jest-message-util "^27.4.0"
-    jest-util "^27.4.0"
-    slash "^3.0.0"
-
 "@jest/core@^27.3.1":
   version "27.3.1"
   resolved "https://registry.yarnpkg.com/@jest/core/-/core-27.3.1.tgz#04992ef1b58b17c459afb87ab56d81e63d386925"
@@ -2570,11 +2558,6 @@ jest-regex-util@^27.0.6, jest-regex-util@^27.4.0:
   resolved "https://registry.yarnpkg.com/jest-regex-util/-/jest-regex-util-27.4.0.tgz#e4c45b52653128843d07ad94aec34393ea14fbca"
   integrity sha512-WeCpMpNnqJYMQoOjm1nTtsgbR4XHAk1u00qDoNBQoykM280+/TmgA5Qh5giC1ecy6a5d4hbSsHzpBtu5yvlbEg==
 
-jest-regex-util@^27.4.0:
-  version "27.4.0"
-  resolved "https://registry.yarnpkg.com/jest-regex-util/-/jest-regex-util-27.4.0.tgz#e4c45b52653128843d07ad94aec34393ea14fbca"
-  integrity sha512-WeCpMpNnqJYMQoOjm1nTtsgbR4XHAk1u00qDoNBQoykM280+/TmgA5Qh5giC1ecy6a5d4hbSsHzpBtu5yvlbEg==
-
 jest-resolve-dependencies@^27.3.1:
   version "27.3.1"
   resolved "https://registry.yarnpkg.com/jest-resolve-dependencies/-/jest-resolve-dependencies-27.3.1.tgz#85b99bdbdfa46e2c81c6228fc4c91076f624f6e2"
@@ -2736,9 +2719,9 @@ jest-watcher@^27.3.1:
     string-length "^4.0.1"
 
 jest-worker@^27.3.1, jest-worker@^27.4.0:
-  version "27.4.0"
-  resolved "https://registry.yarnpkg.com/jest-worker/-/jest-worker-27.4.0.tgz#fa10dddc611cbb47a4153543dd16a0c7e7fd745c"
-  integrity sha512-4WuKcUxtzxBoKOUFbt1MtTY9fJwPVD4aN/4Cgxee7OLetPZn5as2bjfZz98XSf2Zq1JFfhqPZpS+43BmWXKgCA==
+  version "27.4.1"
+  resolved "https://registry.yarnpkg.com/jest-worker/-/jest-worker-27.4.1.tgz#b4e77bd2effb9245171f342bd06c372054b67108"
+  integrity sha512-cWYUNkfST1i17513Ll3GM5h/lJtYR1hRZsfPL4OQkIBWgKj4kbJREgHhxJxZmOmjKyeAg02HRoMWXr+B/JtFgg==
   dependencies:
     "@types/node" "*"
     merge-stream "^2.0.0"
