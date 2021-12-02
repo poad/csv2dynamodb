@@ -1,13 +1,14 @@
-import { AttributeType, Table } from '@aws-cdk/aws-dynamodb';
-import * as cdk from '@aws-cdk/core';
-import { RemovalPolicy } from '@aws-cdk/core';
+import { AttributeType, Table } from 'aws-cdk-lib/aws-dynamodb';
+import * as cdk from 'aws-cdk-lib';
+import { RemovalPolicy } from 'aws-cdk-lib';
+import { Construct } from 'constructs';
 
 interface InfraStackProps extends cdk.StackProps {
   name: string
 }
 
 export class InfraStack extends cdk.Stack {
-  constructor(scope: cdk.Construct, id: string, props: InfraStackProps) {
+  constructor(scope: Construct, id: string, props: InfraStackProps) {
     super(scope, id, props);
 
     new Table(this, 'CSV2DynamoDBTable', {
