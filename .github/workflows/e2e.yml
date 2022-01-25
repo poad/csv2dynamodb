@@ -41,7 +41,7 @@ jobs:
       id: gen-table-name
       run: echo "::set-output name=table::csv2dynamodb-test-$(date +%Y%m%d-%H%M%S)"
     - name: configure aws credentials
-      uses: aws-actions/configure-aws-credentials@master
+      uses: aws-actions/configure-aws-credentials@v1
       with:
         role-to-assume: ${{ secrets.AWS_OIDC_ROLE_ARN }}
         role-session-name: GitHubActions
@@ -91,7 +91,7 @@ jobs:
         npm -g i yarn
         npm -g i aws-cdk
     - name: configure aws credentials
-      uses: aws-actions/configure-aws-credentials@master
+      uses: aws-actions/configure-aws-credentials@v1
       with:
         role-to-assume: ${{ secrets.AWS_OIDC_ROLE_ARN }}
         role-session-name: GitHubActions
