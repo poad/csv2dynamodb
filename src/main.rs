@@ -1,7 +1,8 @@
 use std::collections::HashMap;
 use aws_config::meta::region::RegionProviderChain;
-use aws_sdk_dynamodb::{Client as DynamoDB, Error, Region, PKG_VERSION, Blob};
+use aws_sdk_dynamodb::{Client as DynamoDB, Error, Region, PKG_VERSION};
 use aws_sdk_dynamodb::model::AttributeValue;
+use aws_sdk_dynamodb::types::Blob;
 use structopt::StructOpt;
 use regex::Regex;
 use tracing::{info, debug};
