@@ -23,7 +23,7 @@ jobs:
       table: ${{ steps.gen-table-name.outputs.table }}
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     - name: Use Node.js 16.x
       uses: actions/setup-node@v3
       with:
@@ -67,7 +67,7 @@ jobs:
         cache-key: ${{ env.cache-key }}
     - name: Update Rust toolchain
       run: rustup update
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     - name: Run E2E test
       run: cargo run --verbose -- --file-path ./tests/test_data2.csv --table ${{ needs.setup.outputs.table }}
 
@@ -76,7 +76,7 @@ jobs:
     needs: [setup, build]
     if: ${{ always() }}
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     - name: Use Node.js 16.x
       uses: actions/setup-node@v3
       with:
