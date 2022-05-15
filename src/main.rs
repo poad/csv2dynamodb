@@ -5,7 +5,6 @@ use aws_sdk_dynamodb::model::AttributeValue;
 use aws_sdk_dynamodb::types::Blob;
 use structopt::StructOpt;
 use regex::Regex;
-use tracing::{info, debug};
 use csv2dynamodb::read_csv;
 
 #[derive(Debug, StructOpt)]
