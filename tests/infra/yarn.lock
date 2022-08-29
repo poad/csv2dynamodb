@@ -1798,9 +1798,9 @@ jest-watcher@^29.0.0:
     string-length "^4.0.1"
 
 jest-worker@^29.0.0:
-  version "29.0.0"
-  resolved "https://registry.yarnpkg.com/jest-worker/-/jest-worker-29.0.0.tgz#a1c7b67b2d9ce057383999b32d8b71794efcd0b9"
-  integrity sha512-2t9Panx3F9N1wAvRuZT7xLEptRFc1C5G90DOHniIGz1JIgF9uhd5u8jNBsc7wN63lhnaiLeVLnNx21wT7OVFEQ==
+  version "29.0.1"
+  resolved "https://registry.yarnpkg.com/jest-worker/-/jest-worker-29.0.1.tgz#fb42ff7e05e0573f330ec0cf781fc545dcd11a31"
+  integrity sha512-+B/2/8WW7goit7qVezG9vnI1QP3dlmuzi2W0zxazAQQ8dcDIA63dDn6j4pjOGBARha/ZevcwYQtNIzCySbS7fQ==
   dependencies:
     "@types/node" "*"
     merge-stream "^2.0.0"
