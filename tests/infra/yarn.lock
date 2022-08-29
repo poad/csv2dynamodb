@@ -1686,12 +1686,12 @@ jest-regex-util@^29.0.0:
   integrity sha512-BV7VW7Sy0fInHWN93MMPtlClweYv2qrSCwfeFWmpribGZtQPWNvRSq9XOVgOEjU1iBGRKXUZil0o2AH7Iy9Lug==
 
 jest-resolve-dependencies@^29.0.0:
-  version "29.0.0"
-  resolved "https://registry.yarnpkg.com/jest-resolve-dependencies/-/jest-resolve-dependencies-29.0.0.tgz#6c7886caa63838acb207f2caa7eb8f64930fb1e7"
-  integrity sha512-1TYUMcLZcUqa2fdUQ3leYtiXWXfNmimPvnJ34YDLLf0nyJ/aEeqlHJM9Ji2jw9Qxdh7nUypanjUlUV87yRHBFQ==
+  version "29.0.1"
+  resolved "https://registry.yarnpkg.com/jest-resolve-dependencies/-/jest-resolve-dependencies-29.0.1.tgz#c41b88380c8ea178ce72a750029b5f3d5f65cb94"
+  integrity sha512-fUGcYlSc1NzNz+tsHDjjG0rclw6blJcFZsLEsezxm/n54bAm9HFvJxgBuCV1CJQoPtIx6AfR+tXkR9lpWJs2LQ==
   dependencies:
     jest-regex-util "^29.0.0"
-    jest-snapshot "^29.0.0"
+    jest-snapshot "^29.0.1"
 
 jest-resolve@^29.0.0, jest-resolve@^29.0.1:
   version "29.0.1"
@@ -1763,37 +1763,7 @@ jest-runtime@^29.0.0, jest-runtime@^29.0.1:
     slash "^3.0.0"
     strip-bom "^4.0.0"
 
-jest-snapshot@^29.0.0:
-  version "29.0.0"
-  resolved "https://registry.yarnpkg.com/jest-snapshot/-/jest-snapshot-29.0.0.tgz#5a349608cb7fa12dbdafad999cd5a3ed571bfd90"
-  integrity sha512-rR3B8GInk/IibF0M/sQCukSM8xX8bPI3Q0kjoAw4HT9Mx0Q3bS0MmF74rsreBOnVJgzN0Iwrc7YY56Yp8KQ7kA==
-  dependencies:
-    "@babel/core" "^7.11.6"
-    "@babel/generator" "^7.7.2"
-    "@babel/plugin-syntax-jsx" "^7.7.2"
-    "@babel/plugin-syntax-typescript" "^7.7.2"
-    "@babel/traverse" "^7.7.2"
-    "@babel/types" "^7.3.3"
-    "@jest/expect-utils" "^29.0.0"
-    "@jest/transform" "^29.0.0"
-    "@jest/types" "^29.0.0"
-    "@types/babel__traverse" "^7.0.6"
-    "@types/prettier" "^2.1.5"
-    babel-preset-current-node-syntax "^1.0.0"
-    chalk "^4.0.0"
-    expect "^29.0.0"
-    graceful-fs "^4.2.9"
-    jest-diff "^29.0.0"
-    jest-get-type "^29.0.0"
-    jest-haste-map "^29.0.0"
-    jest-matcher-utils "^29.0.0"
-    jest-message-util "^29.0.0"
-    jest-util "^29.0.0"
-    natural-compare "^1.4.0"
-    pretty-format "^29.0.0"
-    semver "^7.3.5"
-
-jest-snapshot@^29.0.1:
+jest-snapshot@^29.0.0, jest-snapshot@^29.0.1:
   version "29.0.1"
   resolved "https://registry.yarnpkg.com/jest-snapshot/-/jest-snapshot-29.0.1.tgz#ed455cb7e56fb43e2d451edd902d622349d6afed"
   integrity sha512-OuYGp+lsh7RhB3DDX36z/pzrGm2F740e5ERG9PQpJyDknCRtWdhaehBQyMqDnsQdKkvC2zOcetcxskiHjO7e8Q==
