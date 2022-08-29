@@ -511,22 +511,22 @@
     jest-haste-map "^29.0.0"
     slash "^3.0.0"
 
-"@jest/transform@^29.0.0":
-  version "29.0.0"
-  resolved "https://registry.yarnpkg.com/@jest/transform/-/transform-29.0.0.tgz#a19c6af7724786ac286dde2037d077372ce8c76e"
-  integrity sha512-hwyBt8UR5o8GGaphmRqNQwVCctiOR8ncugCp/RlInEZvQ+ysKkS5TFfe5RgeQ0KtKdWByQqn5yA574LLOp3OWw==
+"@jest/transform@^29.0.0", "@jest/transform@^29.0.1":
+  version "29.0.1"
+  resolved "https://registry.yarnpkg.com/@jest/transform/-/transform-29.0.1.tgz#fdaa5d9e135c9bd7addbe65bedd1f15ad028cc7e"
+  integrity sha512-6UxXtqrPScFdDhoip8ys60dQAIYppQinyR87n9nlasR/ZnFfJohKToqzM29KK4gb9gHRv5oDFChdqZKE0SIhsg==
   dependencies:
     "@babel/core" "^7.11.6"
-    "@jest/types" "^29.0.0"
+    "@jest/types" "^29.0.1"
     "@jridgewell/trace-mapping" "^0.3.15"
     babel-plugin-istanbul "^6.1.1"
     chalk "^4.0.0"
     convert-source-map "^1.4.0"
     fast-json-stable-stringify "^2.1.0"
     graceful-fs "^4.2.9"
-    jest-haste-map "^29.0.0"
+    jest-haste-map "^29.0.1"
     jest-regex-util "^29.0.0"
-    jest-util "^29.0.0"
+    jest-util "^29.0.1"
     micromatch "^4.0.4"
     pirates "^4.0.4"
     slash "^3.0.0"
@@ -826,11 +826,11 @@ aws-cdk@*:
     fsevents "2.3.2"
 
 babel-jest@^29.0.0:
-  version "29.0.0"
-  resolved "https://registry.yarnpkg.com/babel-jest/-/babel-jest-29.0.0.tgz#abf783ce6eb999cfb6764915bd86d3055a8ae3be"
-  integrity sha512-EJM2dqxz9+uWJLLucZLPYAmRsHHt1IMkitAHGqjDlIP2IQXzkIMO3ATbBWk0lU6VwX4rNeVN04t/DDB8U5C2rg==
+  version "29.0.1"
+  resolved "https://registry.yarnpkg.com/babel-jest/-/babel-jest-29.0.1.tgz#db50de501fc8727e768f5aa417496cb871ee1ba0"
+  integrity sha512-wyI9r8tqwsZEMWiIaYjdUJ6ztZIO4DMWpGq7laW34wR71WtRS+D/iBEtXOP5W2aSYCVUQMsypRl/xiJYZznnTg==
   dependencies:
-    "@jest/transform" "^29.0.0"
+    "@jest/transform" "^29.0.1"
     "@types/babel__core" "^7.1.14"
     babel-plugin-istanbul "^6.1.1"
     babel-preset-jest "^29.0.0"
@@ -950,9 +950,9 @@ camelcase@^6.2.0:
   integrity sha512-Gmy6FhYlCY7uOElZUSbxo2UCDH8owEk996gkbrpsgGtrJLM3J7jGxl9Ic7Qwwj4ivOE5AWZWRMecDdF7hqGjFA==
 
 caniuse-lite@^1.0.30001370:
-  version "1.0.30001383"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001383.tgz#aecf317ccd940690725ae3ae4f28293c5fb8050e"
-  integrity sha512-swMpEoTp5vDoGBZsYZX7L7nXHe6dsHxi9o6/LKf/f0LukVtnrxly5GVb/fWdCDTqi/yw6Km6tiJ0pmBacm0gbg==
+  version "1.0.30001384"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001384.tgz#029527c2d781a3cfef13fa63b3a78a6088e35973"
+  integrity sha512-BBWt57kqWbc0GYZXb47wTXpmAgqr5LSibPzNjk/AWMdmJMQhLqOl3c/Kd4OAU/tu4NLfYkMx8Tlq3RVBkOBolQ==
 
 case@1.6.3:
   version "1.6.3"
@@ -1575,6 +1575,25 @@ jest-haste-map@^29.0.0:
   optionalDependencies:
     fsevents "^2.3.2"
 
+jest-haste-map@^29.0.1:
+  version "29.0.1"
+  resolved "https://registry.yarnpkg.com/jest-haste-map/-/jest-haste-map-29.0.1.tgz#472212f93ef44309bf97d191f93ddd2e41169615"
+  integrity sha512-gcKOAydafpGoSBvcj/mGCfhOKO8fRLkAeee1KXGdcJ1Pb9O2nnOl4I8bQSIID2MaZeMHtLLgNboukh/pUGkBtg==
+  dependencies:
+    "@jest/types" "^29.0.1"
+    "@types/graceful-fs" "^4.1.3"
+    "@types/node" "*"
+    anymatch "^3.0.3"
+    fb-watchman "^2.0.0"
+    graceful-fs "^4.2.9"
+    jest-regex-util "^29.0.0"
+    jest-util "^29.0.1"
+    jest-worker "^29.0.1"
+    micromatch "^4.0.4"
+    walker "^1.0.8"
+  optionalDependencies:
+    fsevents "^2.3.2"
+
 jest-leak-detector@^29.0.0:
   version "29.0.1"
   resolved "https://registry.yarnpkg.com/jest-leak-detector/-/jest-leak-detector-29.0.1.tgz#1a7cf8475d85e7b2bd53efa5adc5195828a12c33"
@@ -1824,7 +1843,7 @@ jest-watcher@^29.0.0:
     jest-util "^29.0.1"
     string-length "^4.0.1"
 
-jest-worker@^29.0.0:
+jest-worker@^29.0.0, jest-worker@^29.0.1:
   version "29.0.1"
   resolved "https://registry.yarnpkg.com/jest-worker/-/jest-worker-29.0.1.tgz#fb42ff7e05e0573f330ec0cf781fc545dcd11a31"
   integrity sha512-+B/2/8WW7goit7qVezG9vnI1QP3dlmuzi2W0zxazAQQ8dcDIA63dDn6j4pjOGBARha/ZevcwYQtNIzCySbS7fQ==
