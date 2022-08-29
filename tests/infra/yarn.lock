@@ -1564,12 +1564,12 @@ jest-haste-map@^29.0.0:
     fsevents "^2.3.2"
 
 jest-leak-detector@^29.0.0:
-  version "29.0.0"
-  resolved "https://registry.yarnpkg.com/jest-leak-detector/-/jest-leak-detector-29.0.0.tgz#7a6791cf61513550a8fc4a95f907f77db899204f"
-  integrity sha512-kBjNS0/z2+ZV/3N7R+ot5fKD2W1fHkoxC3kH/fkb2z24YSPfR9RGwiNX+YLRG9r0gWsxQx16boxzHT23G6rFBw==
+  version "29.0.1"
+  resolved "https://registry.yarnpkg.com/jest-leak-detector/-/jest-leak-detector-29.0.1.tgz#1a7cf8475d85e7b2bd53efa5adc5195828a12c33"
+  integrity sha512-5tISHJphB+sCmKXtVHJGQGltj7ksrLLb9vkuNWwFR86Of1tfzjskvrrrZU1gSzEfWC+qXIn4tuh8noKHYGMIPA==
   dependencies:
     jest-get-type "^29.0.0"
-    pretty-format "^29.0.0"
+    pretty-format "^29.0.1"
 
 jest-matcher-utils@^28.1.3:
   version "28.1.3"
@@ -2070,10 +2070,10 @@ pretty-format@^28.0.0, pretty-format@^28.1.3:
     ansi-styles "^5.0.0"
     react-is "^18.0.0"
 
-pretty-format@^29.0.0:
-  version "29.0.0"
-  resolved "https://registry.yarnpkg.com/pretty-format/-/pretty-format-29.0.0.tgz#a9a604ca71678f803f34f6563a25a638fce267ba"
-  integrity sha512-tMkFRn1vxRwZdiDETcveuNeonRKDg4doOvI+iyb1sOAtxYioGzRicqnsr+d3C/lLv9hBiM/2lDBi5ilR81h2bQ==
+pretty-format@^29.0.0, pretty-format@^29.0.1:
+  version "29.0.1"
+  resolved "https://registry.yarnpkg.com/pretty-format/-/pretty-format-29.0.1.tgz#2f8077114cdac92a59b464292972a106410c7ad0"
+  integrity sha512-iTHy3QZMzuL484mSTYbQIM1AHhEQsH8mXWS2/vd2yFBYnG3EBqGiMONo28PlPgrW7P/8s/1ISv+y7WH306l8cw==
   dependencies:
     "@jest/schemas" "^29.0.0"
     ansi-styles "^5.0.0"
