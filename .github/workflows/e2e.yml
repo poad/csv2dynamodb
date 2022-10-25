@@ -38,7 +38,7 @@ jobs:
         npm -g i aws-cdk
     - name: generate table name
       id: gen-table-name
-      run: echo "::set-output name=table::csv2dynamodb-test-$(date +%Y%m%d-%H%M%S)"
+      run: echo "table=csv2dynamodb-test-$(date +%Y%m%d-%H%M%S)" >> $GITHUB_OUTPUT
     - name: configure aws credentials
       uses: aws-actions/configure-aws-credentials@v1
       with:
