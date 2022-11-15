@@ -36,7 +36,7 @@ if [ $result -ne 0 ]; then
 fi
 echo ""
 pwd
-yarn install && yarn upgrade && rm -rf node_modules && yarn install --production && git add node_modules -f
+yarn install && yarn upgrade
 result=$?
 if [ $result -ne 0 ]; then
   cd "${CUR}" || exit
