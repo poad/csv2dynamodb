@@ -687,9 +687,9 @@
     pretty-format "^29.0.0"
 
 "@types/node@*":
-  version "18.11.11"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.11.11.tgz#1d455ac0211549a8409d3cdb371cd55cc971e8dc"
-  integrity sha512-KJ021B1nlQUBLopzZmPBVuGU9un7WJd/W4ya7Ih02B4Uwky5Nja0yGYav2EfYIk0RR2Q9oVhf60S2XR1BCWJ2g==
+  version "18.11.12"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.11.12.tgz#89e7f8aa8c88abf432f9bd594888144d7dba10aa"
+  integrity sha512-FgD3NtTAKvyMmD44T07zz2fEf+OKwutgBCEVM8GcvMGVGaDktiLNTDvPwC/LUe3PinMW+X6CuLOF2Ui1mAlSXg==
 
 "@types/prettier@^2.1.5":
   version "2.7.1"
@@ -1019,9 +1019,9 @@ concat-map@0.0.1:
   integrity sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==
 
 constructs@*:
-  version "10.1.183"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.183.tgz#f2e04111472ae47e565e75f38719daa7d4244f5d"
-  integrity sha512-al6dMaK3xBZ6I0vTD/+g7rz2Dqoa6aipQ65AhB9aQTUhbIekpw4BU1s/kp4jz9932ubsEG/ZZ2eHVZngO/sXIQ==
+  version "10.1.184"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.184.tgz#192bf1e116f735c37aae6a6c9c9435355c127a86"
+  integrity sha512-OSXgY9yWYt+RPiZXlUUUV8bx0qBdpFGRk/FRQ/UpSZDHjLWN2pA7aYDTGdW4jutEwVLYTMSZHv9HTjEHow/l5A==
 
 convert-source-map@^1.6.0, convert-source-map@^1.7.0:
   version "1.9.0"
