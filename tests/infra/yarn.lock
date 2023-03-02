@@ -11,9 +11,9 @@
     "@jridgewell/trace-mapping" "^0.3.9"
 
 "@aws-cdk/asset-awscli-v1@^2.2.69":
-  version "2.2.83"
-  resolved "https://registry.yarnpkg.com/@aws-cdk/asset-awscli-v1/-/asset-awscli-v1-2.2.83.tgz#2193e00d6753dcad618e76463b646a4e4bfc7ad3"
-  integrity sha512-IQ7dk6O+gai13F1BEAUUduZ8McyCm7PvLn0yjYMwsp1AO/vqr/ADIPDDRaKBoFpou7pz0FjNzUF/ZRKILHZgzA==
+  version "2.2.86"
+  resolved "https://registry.yarnpkg.com/@aws-cdk/asset-awscli-v1/-/asset-awscli-v1-2.2.86.tgz#2dd443e58559e4c44a7a080779afdf1e0e6fb855"
+  integrity sha512-O9jRUV41sVRTL0Fw2ShiBy7pjsVIt7s/4Svo3XWZSGbPCVxPiE7jEu+dbve2PRuXTnoOX8dJrDhgGKYzUexL/A==
 
 "@aws-cdk/asset-kubectl-v20@^2.1.1":
   version "2.1.1"
