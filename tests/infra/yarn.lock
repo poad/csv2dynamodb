@@ -11,9 +11,9 @@
     "@jridgewell/trace-mapping" "^0.3.9"
 
 "@aws-cdk/asset-awscli-v1@^2.2.97":
-  version "2.2.151"
-  resolved "https://registry.yarnpkg.com/@aws-cdk/asset-awscli-v1/-/asset-awscli-v1-2.2.151.tgz#eec8de7952bd14f63c1d18cb5993e777f5926054"
-  integrity sha512-/+sjJeSgUjL+ZSbGP84I0fqreQxQnPC2mXemBd+ZADZW87reIIXG1u1ZICeBhaY12fg4iFbshGfRVAkOo3QgYw==
+  version "2.2.152"
+  resolved "https://registry.yarnpkg.com/@aws-cdk/asset-awscli-v1/-/asset-awscli-v1-2.2.152.tgz#7fa6fcf7ad274de827e87e56188bfaff9d4c6b11"
+  integrity sha512-zjQptupJIshYDg+XfkFS6J/CKNsEMqYcr21U3BStrBGhjK3uXp6TeHY14g+lJItUxGROtHzlp4/FNphDpVaWjw==
 
 "@aws-cdk/asset-kubectl-v20@^2.1.1":
   version "2.1.1"
@@ -650,9 +650,9 @@
     "@babel/types" "^7.0.0"
 
 "@types/babel__traverse@*", "@types/babel__traverse@^7.0.6":
-  version "7.18.4"
-  resolved "https://registry.yarnpkg.com/@types/babel__traverse/-/babel__traverse-7.18.4.tgz#0fa6be6c182288831be8c31c35dab6d6ccac47c5"
-  integrity sha512-TLG7CsGZZmX9aDF78UuJxnNTfQyRUFU0OYIVyIblr0/wd/HvsIo8wmuB90CszeD2MtLLAE9Tt4cWvk+KVkyGIw==
+  version "7.18.5"
+  resolved "https://registry.yarnpkg.com/@types/babel__traverse/-/babel__traverse-7.18.5.tgz#c107216842905afafd3b6e774f6f935da6f5db80"
+  integrity sha512-enCvTL8m/EHS/zIvJno9nE+ndYPh1/oNFzRYRmtUqJICG2VnCSBzMLW5VN2KCQU91f23tsNKR8v7VJJQMatl7Q==
   dependencies:
     "@babel/types" "^7.3.0"
 
@@ -799,9 +799,9 @@ at-least-node@^1.0.0:
   integrity sha512-+q/t7Ekv1EDY2l6Gda6LLiX14rU9TV20Wa3ofeQmwPFZbOMo9DXrLbOjFaaclkXKWidIaopwAObQDqwWtGUjqg==
 
 aws-cdk-lib@*:
-  version "2.76.0"
-  resolved "https://registry.yarnpkg.com/aws-cdk-lib/-/aws-cdk-lib-2.76.0.tgz#4662fcb7591ed90ebb39dc68bfefc1bbb46bb5f4"
-  integrity sha512-EYWdHh/qJA7v+jD6SeW+BOEChI7oe6IYPHHap+SoJMUrKBVSDKnIGJ8wTP5eV6F27aYaUQiA7rWTKcCWoda8ag==
+  version "2.77.0"
+  resolved "https://registry.yarnpkg.com/aws-cdk-lib/-/aws-cdk-lib-2.77.0.tgz#803031c2457bc5786ed14fbb967788fd526a9358"
+  integrity sha512-T0GUFHBY1B+LkyGk1Df5E1PXwHa7BqvafD4pGvpwWqu8Mu9s/i0kp8YJu6xY//hEC5R8O7V6bfyQJ0S9pUqwQg==
   dependencies:
     "@aws-cdk/asset-awscli-v1" "^2.2.97"
     "@aws-cdk/asset-kubectl-v20" "^2.1.1"
@@ -818,9 +818,9 @@ aws-cdk-lib@*:
     yaml "1.10.2"
 
 aws-cdk@*:
-  version "2.76.0"
-  resolved "https://registry.yarnpkg.com/aws-cdk/-/aws-cdk-2.76.0.tgz#5c1a499e2002551f16ff115df16fa8570d747d84"
-  integrity sha512-y6VHtqUpYenn6mGIBFbcGGXIoXfKA3o0eGL/eeD/gUJ9TcPrgMLQM1NxSMb5JVsOk5BPPXzGmvB0gBu40utGqg==
+  version "2.77.0"
+  resolved "https://registry.yarnpkg.com/aws-cdk/-/aws-cdk-2.77.0.tgz#1004b60455ba6eca8c110bc430583ce14ad8b651"
+  integrity sha512-f0UpWjBxrFkINqlwL50OpIIC03V39hTzg4+NEBlfUc/ftFX8WQQYyT6h29IfxT9Tgo+YoEMlM1nnH/s1c+VKSw==
   optionalDependencies:
     fsevents "2.3.2"
 
@@ -1100,9 +1100,9 @@ diff@^4.0.1:
   integrity sha512-58lmxKSA4BNyLz+HHMUzlOEpg09FV+ev6ZMe3vJihgdxzgcwZ8VoEEPmALCZG9LmqfVoNMMKpttIYTVG6uDY7A==
 
 electron-to-chromium@^1.4.284:
-  version "1.4.372"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.372.tgz#7888ac92ccb9556627c3a37eba3b89ee5ac345f8"
-  integrity sha512-MrlFq/j+TYHOjeWsWGYfzevc25HNeJdsF6qaLFrqBTRWZQtWkb1myq/Q2veLWezVaa5OcSZ99CFwTT4aF4Mung==
+  version "1.4.374"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.374.tgz#091b2de9d80b970f9b5e689675ea62622cd1d74b"
+  integrity sha512-dNP9tQNTrjgVlSXMqGaj0BdrCS+9pcUvy5/emB6x8kh0YwCoDZ0Z4ce1+7aod+KhybHUd5o5LgKrc5al4kVmzQ==
 
 emittery@^0.13.1:
   version "0.13.1"
@@ -2053,9 +2053,9 @@ punycode@^2.1.0, punycode@^2.3.0:
   integrity sha512-rRV+zQD8tVFys26lAGR9WUuS4iUAngJScM+ZRSKtvl5tKeZ2t5bvdNFdNHBW9FWR4guGHlgmsZ1G7BSm2wTbuA==
 
 pure-rand@^6.0.0:
-  version "6.0.1"
-  resolved "https://registry.yarnpkg.com/pure-rand/-/pure-rand-6.0.1.tgz#31207dddd15d43f299fdcdb2f572df65030c19af"
-  integrity sha512-t+x1zEHDjBwkDGY5v5ApnZ/utcd4XYDiJsaQQoptTXgUXX95sDg1elCdJghzicm7n2mbCBJ3uYWr6M22SO19rg==
+  version "6.0.2"
+  resolved "https://registry.yarnpkg.com/pure-rand/-/pure-rand-6.0.2.tgz#a9c2ddcae9b68d736a8163036f088a2781c8b306"
+  integrity sha512-6Yg0ekpKICSjPswYOuC5sku/TSWaRYlA0qsXqJgM/d/4pLPHPuTxK7Nbf7jFKzAeedUhR8C7K9Uv63FBsSo8xQ==
 
 react-is@^18.0.0:
   version "18.2.0"
