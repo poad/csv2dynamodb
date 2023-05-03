@@ -11,9 +11,9 @@
     "@jridgewell/trace-mapping" "^0.3.9"
 
 "@aws-cdk/asset-awscli-v1@^2.2.97":
-  version "2.2.159"
-  resolved "https://registry.yarnpkg.com/@aws-cdk/asset-awscli-v1/-/asset-awscli-v1-2.2.159.tgz#b844a5ccfd47379a4db93773dbfdf001561d6288"
-  integrity sha512-xVF6N2Lpz2wCv4MZ15VSiJXDhb12meNkKcWkj6478YDGZUKpVaj2F/tUpwx8Ugp6y9htpilO3lKMELBZAm019Q==
+  version "2.2.160"
+  resolved "https://registry.yarnpkg.com/@aws-cdk/asset-awscli-v1/-/asset-awscli-v1-2.2.160.tgz#eabd5ef49dc4ef86142a56602c0a64ac2895933a"
+  integrity sha512-7POcphl09akO9TiqXa9VfXlUZS0c/4RRj1tMAHr+BXX8qJPR2udmMp47IWOQmbBCS5G7oxf/UTv0G38qLBoAGg==
 
 "@aws-cdk/asset-kubectl-v20@^2.1.1":
   version "2.1.1"
@@ -21,9 +21,9 @@
   integrity sha512-U1ntiX8XiMRRRH5J1IdC+1t5CE89015cwyt5U63Cpk0GnMlN5+h9WsWMlKlPXZR4rdq/m806JRlBMRpBUB2Dhw==
 
 "@aws-cdk/asset-node-proxy-agent-v5@^2.0.77":
-  version "2.0.133"
-  resolved "https://registry.yarnpkg.com/@aws-cdk/asset-node-proxy-agent-v5/-/asset-node-proxy-agent-v5-2.0.133.tgz#18293bc0181a8993f63bd73edfe122d2882a7fcf"
-  integrity sha512-V7+AylEkbyVpjzYktTXP72fnRKu1Nmok7IGQ/ik2tVgpZawkFCilDMaYLDm/zyUBlcYE27TnS2VPdDDGqTFoiw==
+  version "2.0.134"
+  resolved "https://registry.yarnpkg.com/@aws-cdk/asset-node-proxy-agent-v5/-/asset-node-proxy-agent-v5-2.0.134.tgz#9cba88ac93e38b10803e479a0123606dd67a42d0"
+  integrity sha512-nXCmglOLjlQIQRXhkTixxnLg8r2yTpjNTM0QTde+3Ubc8GE8A5R9ddNYqWQIovTe+3detWZ7f8nUgVwnIfoh1w==
 
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.12.13", "@babel/code-frame@^7.18.6", "@babel/code-frame@^7.21.4":
   version "7.21.4"
@@ -38,9 +38,9 @@
   integrity sha512-KYMqFYTaenzMK4yUtf4EW9wc4N9ef80FsbMtkwool5zpwl4YrT1SdWYSTRcT94KO4hannogdS+LxY7L+arP3gA==
 
 "@babel/core@^7.11.6", "@babel/core@^7.12.3":
-  version "7.21.5"
-  resolved "https://registry.yarnpkg.com/@babel/core/-/core-7.21.5.tgz#92f753e8b9f96e15d4b398dbe2f25d1408c9c426"
-  integrity sha512-9M398B/QH5DlfCOTKDZT1ozXr0x8uBEeFd+dJraGUZGiaNpGCDVGCc14hZexsMblw3XxltJ+6kSvogp9J+5a9g==
+  version "7.21.8"
+  resolved "https://registry.yarnpkg.com/@babel/core/-/core-7.21.8.tgz#2a8c7f0f53d60100ba4c32470ba0281c92aa9aa4"
+  integrity sha512-YeM22Sondbo523Sz0+CirSPnbj9bG3P0CdHcBZdqUuaeOaYEFbOLoGU7lebvGP6P5J/WE9wOn7u7C4J9HvS1xQ==
   dependencies:
     "@ampproject/remapping" "^2.2.0"
     "@babel/code-frame" "^7.21.4"
@@ -48,7 +48,7 @@
     "@babel/helper-compilation-targets" "^7.21.5"
     "@babel/helper-module-transforms" "^7.21.5"
     "@babel/helpers" "^7.21.5"
-    "@babel/parser" "^7.21.5"
+    "@babel/parser" "^7.21.8"
     "@babel/template" "^7.20.7"
     "@babel/traverse" "^7.21.5"
     "@babel/types" "^7.21.5"
@@ -172,10 +172,10 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
-"@babel/parser@^7.1.0", "@babel/parser@^7.14.7", "@babel/parser@^7.20.7", "@babel/parser@^7.21.5":
-  version "7.21.5"
-  resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.21.5.tgz#821bb520118fd25b982eaf8d37421cf5c64a312b"
-  integrity sha512-J+IxH2IsxV4HbnTrSWgMAQj0UEo61hDA4Ny8h8PCX0MLXiibqHbqIOVneqdocemSBc22VpBKxt4J6FQzy9HarQ==
+"@babel/parser@^7.1.0", "@babel/parser@^7.14.7", "@babel/parser@^7.20.7", "@babel/parser@^7.21.5", "@babel/parser@^7.21.8":
+  version "7.21.8"
+  resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.21.8.tgz#642af7d0333eab9c0ad70b14ac5e76dbde7bfdf8"
+  integrity sha512-6zavDGdzG3gUqAdWvlLFfk+36RilI+Pwyuuh7HItyeScCWP3k6i8vKclAQ0bM/0y/Kz/xiwvxhMv9MgTJP5gmA==
 
 "@babel/plugin-syntax-async-generators@^7.8.4":
   version "7.8.4"
