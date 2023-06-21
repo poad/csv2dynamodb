@@ -24,34 +24,43 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Use Node.js 16.x
+
+    - uses: pnpm/action-setup@v2
+      name: Install pnpm
+      id: pnpm-install
+      with:
+        version: 8.6.3
+        run_install: |
+          - recursive: false
+            cwd: tests/infra
+            args: [--no-frozen-lockfile]
+
+    - name: Use Node.js 18.x
       uses: actions/setup-node@v3
       with:
-        node-version: 16.x
+        node-version: 18.x
         check-latest: true
-        cache: 'yarn'
-        cache-dependency-path: tests/infra/yarn.lock
-    - name: Install AWS CDK and yarn
+
+    - name: Install AWS CDK and pnpm
       run: |
-        npm -g i npm
-        npm -g i yarn
-        npm -g i aws-cdk
+        npm -g i npm aws-cdk
+  
     - name: generate table name
       id: gen-table-name
       run: echo "table=csv2dynamodb-test-$(date +%Y%m%d-%H%M%S)" >> $GITHUB_OUTPUT
+
     - name: configure aws credentials
       uses: aws-actions/configure-aws-credentials@v2
       with:
         role-to-assume: ${{ secrets.AWS_OIDC_ROLE_ARN }}
         role-session-name: GitHubActions
         aws-region: ${{ env.AWS_REGION }}
+
     - name: Create for testing table
       env:
         TABLE_NAME: ${{ steps.gen-table-name.outputs.table }}
-      run: |
-        cd tests/infra
-        yarn install
-        cdk deploy -c name="${TABLE_NAME}" --require-approval=never
+      working-directory: tests/infra
+      run: cdk deploy -c name="${TABLE_NAME}" --require-approval=never
 
   build:
     needs: [setup]
@@ -64,6 +73,7 @@ jobs:
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY }}
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: us-west-2
+
     - name: Update Rust toolchain
       run: rustup update
     - uses: actions/checkout@v3
@@ -76,18 +86,26 @@ jobs:
     if: ${{ always() }}
     steps:
     - uses: actions/checkout@v3
-    - name: Use Node.js 16.x
+
+
+    - uses: pnpm/action-setup@v2
+      name: Install pnpm
+      id: pnpm-install
+      with:
+        version: 8.6.3
+        run_install: |
+          - recursive: false
+            cwd: tests/infra
+            args: [--no-frozen-lockfile]
+    - name: Use Node.js 18.x
       uses: actions/setup-node@v3
       with:
-        node-version: 16.x
+        node-version: 18.x
         check-latest: true
-        cache: 'yarn'
-        cache-dependency-path: tests/infra/yarn.lock
-    - name: Install AWS CDK and yarn
+
+    - name: Install AWS CDK and pnpm
       run: |
-        npm -g i npm
-        npm -g i yarn
-        npm -g i aws-cdk
+        npm -g i npm aws-cdk
     - name: configure aws credentials
       uses: aws-actions/configure-aws-credentials@v2
       with:
@@ -97,7 +115,5 @@ jobs:
     - name: Remove for testing table
       env:
         TABLE_NAME: ${{ needs.setup.outputs.table }}
-      run: |
-        cd tests/infra
-        yarn install
-        cdk destroy -c name="${TABLE_NAME}" -f
+      working-directory: tests/infra
+      run: cdk destroy -c name="${TABLE_NAME}" -f
