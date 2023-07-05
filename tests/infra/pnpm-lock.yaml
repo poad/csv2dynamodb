@@ -1264,7 +1264,7 @@ packages:
     dependencies:
       '@jest/expect-utils': 29.5.0
       jest-get-type: 29.4.3
-      jest-matcher-utils: 29.5.0
+      jest-matcher-utils: 29.6.0
       jest-message-util: 29.5.0
       jest-util: 29.5.0
     dev: true
@@ -1519,7 +1519,7 @@ packages:
       dedent: 0.7.0
       is-generator-fn: 2.1.0
       jest-each: 29.5.0
-      jest-matcher-utils: 29.5.0
+      jest-matcher-utils: 29.6.0
       jest-message-util: 29.5.0
       jest-runtime: 29.5.0
       jest-snapshot: 29.5.0
@@ -1601,8 +1601,8 @@ packages:
       - supports-color
     dev: true
 
-  /jest-diff@29.5.0:
-    resolution: {integrity: sha512-LtxijLLZBduXnHSniy0WMdaHjmQnt3g5sa16W4p0HqukYTTsyTW3GD1q41TyGl5YFXj/5B2U6dlh5FM1LIMgxw==}
+  /jest-diff@29.6.0:
+    resolution: {integrity: sha512-ZRm7cd2m9YyZ0N3iMyuo1iUiprxQ/MFpYWXzEEj7hjzL3WnDffKW8192XBDcrAI8j7hnrM1wed3bL/oEnYF/8w==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     dependencies:
       chalk: 4.1.2
@@ -1673,12 +1673,12 @@ packages:
       pretty-format: 29.6.0
     dev: true
 
-  /jest-matcher-utils@29.5.0:
-    resolution: {integrity: sha512-lecRtgm/rjIK0CQ7LPQwzCs2VwW6WAahA55YBuI+xqmhm7LAaxokSB8C97yJeYyT+HvQkH741StzpU41wohhWw==}
+  /jest-matcher-utils@29.6.0:
+    resolution: {integrity: sha512-oSlqfGN+sbkB2Q5um/zL7z80w84FEAcLKzXBZIPyRk2F2Srg1ubhrHVKW68JCvb2+xKzAeGw35b+6gciS24PHw==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     dependencies:
       chalk: 4.1.2
-      jest-diff: 29.5.0
+      jest-diff: 29.6.0
       jest-get-type: 29.4.3
       pretty-format: 29.6.0
     dev: true
@@ -1827,9 +1827,9 @@ packages:
       chalk: 4.1.2
       expect: 29.5.0
       graceful-fs: 4.2.11
-      jest-diff: 29.5.0
+      jest-diff: 29.6.0
       jest-get-type: 29.4.3
-      jest-matcher-utils: 29.5.0
+      jest-matcher-utils: 29.6.0
       jest-message-util: 29.5.0
       jest-util: 29.6.0
       natural-compare: 1.4.0
