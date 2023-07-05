@@ -456,7 +456,7 @@ packages:
       '@jest/console': 29.5.0
       '@jest/reporters': 29.5.0
       '@jest/test-result': 29.6.0
-      '@jest/transform': 29.5.0
+      '@jest/transform': 29.6.0
       '@jest/types': 29.5.0
       '@types/node': 20.3.3
       ansi-escapes: 4.3.2
@@ -622,29 +622,6 @@ packages:
       graceful-fs: 4.2.11
       jest-haste-map: 29.6.0
       slash: 3.0.0
-    dev: true
-
-  /@jest/transform@29.5.0:
-    resolution: {integrity: sha512-8vbeZWqLJOvHaDfeMuoHITGKSz5qWc9u04lnWrQE3VyuSw604PzQM824ZeX9XSjUCeDiE3GuxZe5UKa8J61NQw==}
-    engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
-    dependencies:
-      '@babel/core': 7.22.5
-      '@jest/types': 29.6.0
-      '@jridgewell/trace-mapping': 0.3.18
-      babel-plugin-istanbul: 6.1.1
-      chalk: 4.1.2
-      convert-source-map: 2.0.0
-      fast-json-stable-stringify: 2.1.0
-      graceful-fs: 4.2.11
-      jest-haste-map: 29.6.0
-      jest-regex-util: 29.4.3
-      jest-util: 29.6.0
-      micromatch: 4.0.5
-      pirates: 4.0.6
-      slash: 3.0.0
-      write-file-atomic: 4.0.2
-    transitivePeerDependencies:
-      - supports-color
     dev: true
 
   /@jest/transform@29.6.0:
