@@ -459,7 +459,7 @@ packages:
       jest-regex-util: 29.4.3
       jest-resolve: 29.5.0
       jest-resolve-dependencies: 29.5.0
-      jest-runner: 29.5.0
+      jest-runner: 29.6.0
       jest-runtime: 29.6.0
       jest-snapshot: 29.5.0
       jest-util: 29.5.0
@@ -1956,35 +1956,6 @@ packages:
       resolve: 1.22.2
       resolve.exports: 2.0.2
       slash: 3.0.0
-    dev: true
-
-  /jest-runner@29.5.0:
-    resolution: {integrity: sha512-m7b6ypERhFghJsslMLhydaXBiLf7+jXy8FwGRHO3BGV1mcQpPbwiqiKUR2zU2NJuNeMenJmlFZCsIqzJCTeGLQ==}
-    engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
-    dependencies:
-      '@jest/console': 29.6.0
-      '@jest/environment': 29.6.0
-      '@jest/test-result': 29.6.0
-      '@jest/transform': 29.6.0
-      '@jest/types': 29.6.0
-      '@types/node': 20.3.3
-      chalk: 4.1.2
-      emittery: 0.13.1
-      graceful-fs: 4.2.11
-      jest-docblock: 29.4.3
-      jest-environment-node: 29.6.0
-      jest-haste-map: 29.6.0
-      jest-leak-detector: 29.6.0
-      jest-message-util: 29.6.0
-      jest-resolve: 29.6.0
-      jest-runtime: 29.6.0
-      jest-util: 29.6.0
-      jest-watcher: 29.6.0
-      jest-worker: 29.6.0
-      p-limit: 3.1.0
-      source-map-support: 0.5.13
-    transitivePeerDependencies:
-      - supports-color
     dev: true
 
   /jest-runner@29.6.0:
