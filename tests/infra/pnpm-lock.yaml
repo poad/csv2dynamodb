@@ -420,18 +420,6 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /@jest/console@29.5.0:
-    resolution: {integrity: sha512-NEpkObxPwyw/XxZVLPmAGKE89IQRp4puc6IQRPru6JKd1M3fW9v1xM1AnzIJE65hbCkzQAdnL8P47e9hzhiYLQ==}
-    engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
-    dependencies:
-      '@jest/types': 29.6.0
-      '@types/node': 20.3.3
-      chalk: 4.1.2
-      jest-message-util: 29.6.0
-      jest-util: 29.6.0
-      slash: 3.0.0
-    dev: true
-
   /@jest/console@29.6.0:
     resolution: {integrity: sha512-anb6L1yg7uPQpytNVA5skRaXy3BmrsU8icRhTVNbWdjYWDDfy8M1Kq5HIVRpYoABdbpqsc5Dr+jtu4+qWRQBiQ==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
@@ -453,7 +441,7 @@ packages:
       node-notifier:
         optional: true
     dependencies:
-      '@jest/console': 29.5.0
+      '@jest/console': 29.6.0
       '@jest/reporters': 29.5.0
       '@jest/test-result': 29.6.0
       '@jest/transform': 29.6.0
