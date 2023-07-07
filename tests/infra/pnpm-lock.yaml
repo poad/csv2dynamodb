@@ -470,7 +470,7 @@ packages:
       jest-message-util: 29.5.0
       jest-regex-util: 29.4.3
       jest-resolve: 29.5.0
-      jest-resolve-dependencies: 29.5.0
+      jest-resolve-dependencies: 29.6.1
       jest-runner: 29.6.0
       jest-runtime: 29.6.0
       jest-snapshot: 29.5.0
@@ -512,7 +512,7 @@ packages:
       jest-message-util: 29.6.1
       jest-regex-util: 29.4.3
       jest-resolve: 29.6.0
-      jest-resolve-dependencies: 29.6.0
+      jest-resolve-dependencies: 29.6.1
       jest-runner: 29.6.0
       jest-runtime: 29.6.0
       jest-snapshot: 29.6.1
@@ -1796,16 +1796,6 @@ packages:
       - supports-color
     dev: true
 
-  /jest-diff@29.6.0:
-    resolution: {integrity: sha512-ZRm7cd2m9YyZ0N3iMyuo1iUiprxQ/MFpYWXzEEj7hjzL3WnDffKW8192XBDcrAI8j7hnrM1wed3bL/oEnYF/8w==}
-    engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
-    dependencies:
-      chalk: 4.1.2
-      diff-sequences: 29.4.3
-      jest-get-type: 29.4.3
-      pretty-format: 29.6.1
-    dev: true
-
   /jest-diff@29.6.1:
     resolution: {integrity: sha512-FsNCvinvl8oVxpNLttNQX7FAq7vR+gMDGj90tiP7siWw1UdakWUGqrylpsYrpvj908IYckm5Y0Q7azNAozU1Kg==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
@@ -1921,9 +1911,9 @@ packages:
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     dependencies:
       chalk: 4.1.2
-      jest-diff: 29.6.0
+      jest-diff: 29.6.1
       jest-get-type: 29.4.3
-      pretty-format: 29.6.0
+      pretty-format: 29.6.1
     dev: true
 
   /jest-matcher-utils@29.6.1:
@@ -1946,7 +1936,7 @@ packages:
       chalk: 4.1.2
       graceful-fs: 4.2.11
       micromatch: 4.0.5
-      pretty-format: 29.6.0
+      pretty-format: 29.6.1
       slash: 3.0.0
       stack-utils: 2.0.6
     dev: true
@@ -2004,18 +1994,8 @@ packages:
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     dev: true
 
-  /jest-resolve-dependencies@29.5.0:
-    resolution: {integrity: sha512-sjV3GFr0hDJMBpYeUuGduP+YeCRbd7S/ck6IvL3kQ9cpySYKqcqhdLLC2rFwrcL7tz5vYibomBrsFYWkIGGjOg==}
-    engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
-    dependencies:
-      jest-regex-util: 29.4.3
-      jest-snapshot: 29.6.1
-    transitivePeerDependencies:
-      - supports-color
-    dev: true
-
-  /jest-resolve-dependencies@29.6.0:
-    resolution: {integrity: sha512-eOfPog9K3hJdJk/3i6O6bQhXS+3uXhMDkLJGX+xmMPp7T1d/zdcFofbDnHgNoEkhD/mSimC5IagLEP7lpLLu/A==}
+  /jest-resolve-dependencies@29.6.1:
+    resolution: {integrity: sha512-BbFvxLXtcldaFOhNMXmHRWx1nXQO5LoXiKSGQcA1LxxirYceZT6ch8KTE1bK3X31TNG/JbkI7OkS/ABexVahiw==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     dependencies:
       jest-regex-util: 29.4.3
@@ -2533,15 +2513,6 @@ packages:
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     dependencies:
       '@jest/schemas': 29.4.3
-      ansi-styles: 5.2.0
-      react-is: 18.2.0
-    dev: true
-
-  /pretty-format@29.6.0:
-    resolution: {integrity: sha512-XH+D4n7Ey0iSR6PdAnBs99cWMZdGsdKrR33iUHQNr79w1szKTCIZDVdXuccAsHVwDBp0XeWPfNEoaxP9EZgRmQ==}
-    engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
-    dependencies:
-      '@jest/schemas': 29.6.0
       ansi-styles: 5.2.0
       react-is: 18.2.0
     dev: true
