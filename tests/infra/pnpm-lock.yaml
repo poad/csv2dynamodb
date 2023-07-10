@@ -475,7 +475,7 @@ packages:
       jest-runtime: 29.6.0
       jest-snapshot: 29.5.0
       jest-util: 29.5.0
-      jest-validate: 29.5.0
+      jest-validate: 29.6.1
       jest-watcher: 29.6.1
       micromatch: 4.0.5
       pretty-format: 29.6.1
@@ -517,7 +517,7 @@ packages:
       jest-runtime: 29.6.0
       jest-snapshot: 29.6.1
       jest-util: 29.6.1
-      jest-validate: 29.6.0
+      jest-validate: 29.6.1
       jest-watcher: 29.6.1
       micromatch: 4.0.5
       pretty-format: 29.6.1
@@ -1701,7 +1701,7 @@ packages:
       import-local: 3.1.0
       jest-config: 29.6.0(@types/node@20.3.3)(ts-node@10.9.1)
       jest-util: 29.6.0
-      jest-validate: 29.6.0
+      jest-validate: 29.6.1
       prompts: 2.4.2
       yargs: 17.7.2
     transitivePeerDependencies:
@@ -1739,7 +1739,7 @@ packages:
       jest-resolve: 29.6.0
       jest-runner: 29.6.0
       jest-util: 29.6.1
-      jest-validate: 29.6.0
+      jest-validate: 29.6.1
       micromatch: 4.0.5
       parse-json: 5.2.0
       pretty-format: 29.6.1
@@ -1779,7 +1779,7 @@ packages:
       jest-resolve: 29.6.0
       jest-runner: 29.6.0
       jest-util: 29.6.1
-      jest-validate: 29.6.0
+      jest-validate: 29.6.1
       micromatch: 4.0.5
       parse-json: 5.2.0
       pretty-format: 29.6.1
@@ -2007,7 +2007,7 @@ packages:
       jest-haste-map: 29.6.0
       jest-pnp-resolver: 1.2.3(jest-resolve@29.5.0)
       jest-util: 29.6.1
-      jest-validate: 29.6.0
+      jest-validate: 29.6.1
       resolve: 1.22.2
       resolve.exports: 2.0.2
       slash: 3.0.0
@@ -2022,7 +2022,7 @@ packages:
       jest-haste-map: 29.6.1
       jest-pnp-resolver: 1.2.3(jest-resolve@29.6.0)
       jest-util: 29.6.1
-      jest-validate: 29.6.0
+      jest-validate: 29.6.1
       resolve: 1.22.2
       resolve.exports: 2.0.2
       slash: 3.0.0
@@ -2183,20 +2183,8 @@ packages:
       picomatch: 2.3.1
     dev: true
 
-  /jest-validate@29.5.0:
-    resolution: {integrity: sha512-pC26etNIi+y3HV8A+tUGr/lph9B18GnzSRAkPaaZJIE1eFdiYm6/CewuiJQ8/RlfHd1u/8Ioi8/sJ+CmbA+zAQ==}
-    engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
-    dependencies:
-      '@jest/types': 29.6.1
-      camelcase: 6.3.0
-      chalk: 4.1.2
-      jest-get-type: 29.4.3
-      leven: 3.1.0
-      pretty-format: 29.6.1
-    dev: true
-
-  /jest-validate@29.6.0:
-    resolution: {integrity: sha512-MLTrAJsb1+W7svbeZ+A7pAnyXMaQrjvPDKCy7OlfsfB6TMVc69v7WjUWfiR6r3snULFWZASiKgvNVDuATta1dg==}
+  /jest-validate@29.6.1:
+    resolution: {integrity: sha512-r3Ds69/0KCN4vx4sYAbGL1EVpZ7MSS0vLmd3gV78O+NAx3PDQQukRU5hNHPXlyqCgFY8XUk7EuTMLugh0KzahA==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     dependencies:
       '@jest/types': 29.6.1
