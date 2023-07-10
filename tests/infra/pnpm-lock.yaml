@@ -1733,7 +1733,7 @@ packages:
       glob: 7.2.3
       graceful-fs: 4.2.11
       jest-circus: 29.6.0
-      jest-environment-node: 29.6.0
+      jest-environment-node: 29.6.1
       jest-get-type: 29.4.3
       jest-regex-util: 29.4.3
       jest-resolve: 29.6.0
@@ -1773,7 +1773,7 @@ packages:
       glob: 7.2.3
       graceful-fs: 4.2.11
       jest-circus: 29.6.0
-      jest-environment-node: 29.6.0
+      jest-environment-node: 29.6.1
       jest-get-type: 29.4.3
       jest-regex-util: 29.4.3
       jest-resolve: 29.6.0
@@ -1818,8 +1818,8 @@ packages:
       pretty-format: 29.6.1
     dev: true
 
-  /jest-environment-node@29.6.0:
-    resolution: {integrity: sha512-BOf5Q2/nFCdBOnyBM5c5/6DbdQYgc+0gyUQ8l8qhUAB8O7pM+4QJXIXJsRZJaxd5SHV6y5VArTVhOfogoqcP8Q==}
+  /jest-environment-node@29.6.1:
+    resolution: {integrity: sha512-ZNIfAiE+foBog24W+2caIldl4Irh8Lx1PUhg/GZ0odM1d/h2qORAsejiFc7zb+SEmYPn1yDZzEDSU5PmDkmVLQ==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     dependencies:
       '@jest/environment': 29.6.1
@@ -2042,7 +2042,7 @@ packages:
       emittery: 0.13.1
       graceful-fs: 4.2.11
       jest-docblock: 29.4.3
-      jest-environment-node: 29.6.0
+      jest-environment-node: 29.6.1
       jest-haste-map: 29.6.0
       jest-leak-detector: 29.6.0
       jest-message-util: 29.6.1
