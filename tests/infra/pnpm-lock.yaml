@@ -613,7 +613,7 @@ packages:
       istanbul-reports: 3.1.6
       jest-message-util: 29.6.3
       jest-util: 29.6.3
-      jest-worker: 29.6.3
+      jest-worker: 29.6.4
       slash: 3.0.0
       string-length: 4.0.2
       strip-ansi: 6.0.1
@@ -1766,7 +1766,7 @@ packages:
       graceful-fs: 4.2.11
       jest-regex-util: 29.6.3
       jest-util: 29.6.3
-      jest-worker: 29.6.3
+      jest-worker: 29.6.4
       micromatch: 4.0.5
       walker: 1.0.8
     optionalDependencies:
@@ -1935,7 +1935,7 @@ packages:
       jest-runtime: 29.6.3
       jest-util: 29.6.3
       jest-watcher: 29.6.3
-      jest-worker: 29.6.3
+      jest-worker: 29.6.4
       p-limit: 3.1.0
       source-map-support: 0.5.13
     transitivePeerDependencies:
@@ -2094,16 +2094,6 @@ packages:
       emittery: 0.13.1
       jest-util: 29.6.3
       string-length: 4.0.2
-    dev: true
-
-  /jest-worker@29.6.3:
-    resolution: {integrity: sha512-wacANXecZ/GbQakpf2CClrqrlwsYYDSXFd4fIGdL+dXpM2GWoJ+6bhQ7vR3TKi3+gkSfBkjy1/khH/WrYS4Q6g==}
-    engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
-    dependencies:
-      '@types/node': 20.5.4
-      jest-util: 29.6.3
-      merge-stream: 2.0.0
-      supports-color: 8.1.1
     dev: true
 
   /jest-worker@29.6.4:
