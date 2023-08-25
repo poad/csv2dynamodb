@@ -472,7 +472,7 @@ packages:
       jest-snapshot: 29.6.3
       jest-util: 29.6.3
       jest-validate: 29.6.3
-      jest-watcher: 29.6.3
+      jest-watcher: 29.6.4
       micromatch: 4.0.5
       pretty-format: 29.6.3
       slash: 3.0.0
@@ -595,8 +595,8 @@ packages:
         optional: true
     dependencies:
       '@bcoe/v8-coverage': 0.2.3
-      '@jest/console': 29.6.3
-      '@jest/test-result': 29.6.3
+      '@jest/console': 29.6.4
+      '@jest/test-result': 29.6.4
       '@jest/transform': 29.6.3
       '@jest/types': 29.6.3
       '@jridgewell/trace-mapping': 0.3.19
@@ -642,7 +642,7 @@ packages:
     resolution: {integrity: sha512-k7ZZaNvOSMBHPZYiy0kuiaFoyansR5QnTwDux1EjK3kD5iWpRVyJIJ0RAIV39SThafchuW59vra7F8mdy5Hfgw==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     dependencies:
-      '@jest/console': 29.6.3
+      '@jest/console': 29.6.4
       '@jest/types': 29.6.3
       '@types/istanbul-lib-coverage': 2.0.4
       collect-v8-coverage: 1.0.2
@@ -662,7 +662,7 @@ packages:
     resolution: {integrity: sha512-/SmijaAU2TY9ComFGIYa6Z+fmKqQMnqs2Nmwb0P/Z/tROdZ7M0iruES1EaaU9PBf8o9uED5xzaJ3YPFEIcDgAg==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     dependencies:
-      '@jest/test-result': 29.6.3
+      '@jest/test-result': 29.6.4
       graceful-fs: 4.2.11
       jest-haste-map: 29.6.3
       slash: 3.0.0
@@ -1917,9 +1917,9 @@ packages:
     resolution: {integrity: sha512-E4zsMhQnjhirFPhDTJgoLMWUrVCDij/KGzWlbslDHGuO8Hl2pVUfOiygMzVZtZq+BzmlqwEr7LYmW+WFLlmX8w==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     dependencies:
-      '@jest/console': 29.6.3
+      '@jest/console': 29.6.4
       '@jest/environment': 29.6.3
-      '@jest/test-result': 29.6.3
+      '@jest/test-result': 29.6.4
       '@jest/transform': 29.6.3
       '@jest/types': 29.6.3
       '@types/node': 20.5.6
@@ -1934,7 +1934,7 @@ packages:
       jest-resolve: 29.6.3
       jest-runtime: 29.6.3
       jest-util: 29.6.3
-      jest-watcher: 29.6.3
+      jest-watcher: 29.6.4
       jest-worker: 29.6.4
       p-limit: 3.1.0
       source-map-support: 0.5.13
@@ -1950,7 +1950,7 @@ packages:
       '@jest/fake-timers': 29.6.3
       '@jest/globals': 29.6.3
       '@jest/source-map': 29.6.3
-      '@jest/test-result': 29.6.3
+      '@jest/test-result': 29.6.4
       '@jest/transform': 29.6.3
       '@jest/types': 29.6.3
       '@types/node': 20.5.6
@@ -2082,11 +2082,11 @@ packages:
       pretty-format: 29.6.3
     dev: true
 
-  /jest-watcher@29.6.3:
-    resolution: {integrity: sha512-NgpFjZ2U2MKusjidbi4Oiu7tfs+nrgdIxIEVROvH1cFmOei9Uj25lwkMsakqLnH/s0nEcvxO1ck77FiRlcnpZg==}
+  /jest-watcher@29.6.4:
+    resolution: {integrity: sha512-oqUWvx6+On04ShsT00Ir9T4/FvBeEh2M9PTubgITPxDa739p4hoQweWPRGyYeaojgT0xTpZKF0Y/rSY1UgMxvQ==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     dependencies:
-      '@jest/test-result': 29.6.3
+      '@jest/test-result': 29.6.4
       '@jest/types': 29.6.3
       '@types/node': 20.5.6
       ansi-escapes: 4.3.2
