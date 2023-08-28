@@ -416,18 +416,6 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /@jest/console@29.6.3:
-    resolution: {integrity: sha512-ukZbHAdDH4ktZIOKvWs1juAXhiVAdvCyM8zv4S/7Ii3vJSDvMW5k+wOVGMQmHLHUFw3Ko63ZQNy7NI6PSlsD5w==}
-    engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
-    dependencies:
-      '@jest/types': 29.6.3
-      '@types/node': 20.5.6
-      chalk: 4.1.2
-      jest-message-util: 29.6.3
-      jest-util: 29.6.3
-      slash: 3.0.0
-    dev: true
-
   /@jest/console@29.6.4:
     resolution: {integrity: sha512-wNK6gC0Ha9QeEPSkeJedQuTQqxZYnDPuDcDhVuVatRvMkL4D0VTvFVZj+Yuh6caG2aOfzkUZ36KtCmLNtR02hw==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
@@ -449,9 +437,9 @@ packages:
       node-notifier:
         optional: true
     dependencies:
-      '@jest/console': 29.6.3
+      '@jest/console': 29.6.4
       '@jest/reporters': 29.6.3
-      '@jest/test-result': 29.6.3
+      '@jest/test-result': 29.6.4
       '@jest/transform': 29.6.3
       '@jest/types': 29.6.3
       '@types/node': 20.5.6
@@ -636,16 +624,6 @@ packages:
       '@jridgewell/trace-mapping': 0.3.19
       callsites: 3.1.0
       graceful-fs: 4.2.11
-    dev: true
-
-  /@jest/test-result@29.6.3:
-    resolution: {integrity: sha512-k7ZZaNvOSMBHPZYiy0kuiaFoyansR5QnTwDux1EjK3kD5iWpRVyJIJ0RAIV39SThafchuW59vra7F8mdy5Hfgw==}
-    engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
-    dependencies:
-      '@jest/console': 29.6.4
-      '@jest/types': 29.6.3
-      '@types/istanbul-lib-coverage': 2.0.4
-      collect-v8-coverage: 1.0.2
     dev: true
 
   /@jest/test-result@29.6.4:
@@ -1640,7 +1618,7 @@ packages:
         optional: true
     dependencies:
       '@jest/core': 29.6.3(ts-node@10.9.1)
-      '@jest/test-result': 29.6.3
+      '@jest/test-result': 29.6.4
       '@jest/types': 29.6.3
       chalk: 4.1.2
       exit: 0.1.2
