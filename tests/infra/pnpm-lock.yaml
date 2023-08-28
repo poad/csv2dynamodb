@@ -457,7 +457,7 @@ packages:
       jest-resolve-dependencies: 29.6.3
       jest-runner: 29.6.3
       jest-runtime: 29.6.3
-      jest-snapshot: 29.6.3
+      jest-snapshot: 29.6.4
       jest-util: 29.6.3
       jest-validate: 29.6.3
       jest-watcher: 29.6.4
@@ -495,16 +495,6 @@ packages:
       jest-get-type: 29.6.3
     dev: true
 
-  /@jest/expect@29.6.3:
-    resolution: {integrity: sha512-Ic08XbI2jlg6rECy+CGwk/8NDa6VE7UmIG6++9OTPAMnQmNGY28hu69Nf629CWv6T7YMODLbONxDFKdmQeI9FA==}
-    engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
-    dependencies:
-      expect: 29.6.3
-      jest-snapshot: 29.6.3
-    transitivePeerDependencies:
-      - supports-color
-    dev: true
-
   /@jest/expect@29.6.4:
     resolution: {integrity: sha512-Warhsa7d23+3X5bLbrbYvaehcgX5TLYhI03JKoedTiI8uJU4IhqYBWF7OSSgUyz4IgLpUYPkK0AehA5/fRclAA==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
@@ -532,7 +522,7 @@ packages:
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     dependencies:
       '@jest/environment': 29.6.4
-      '@jest/expect': 29.6.3
+      '@jest/expect': 29.6.4
       '@jest/types': 29.6.3
       jest-mock: 29.6.3
     transitivePeerDependencies:
@@ -563,7 +553,7 @@ packages:
       '@bcoe/v8-coverage': 0.2.3
       '@jest/console': 29.6.4
       '@jest/test-result': 29.6.4
-      '@jest/transform': 29.6.3
+      '@jest/transform': 29.6.4
       '@jest/types': 29.6.3
       '@jridgewell/trace-mapping': 0.3.19
       '@types/node': 20.5.6
@@ -620,7 +610,7 @@ packages:
     dependencies:
       '@jest/test-result': 29.6.4
       graceful-fs: 4.2.11
-      jest-haste-map: 29.6.3
+      jest-haste-map: 29.6.4
       slash: 3.0.0
     dev: true
 
@@ -636,7 +626,7 @@ packages:
       convert-source-map: 2.0.0
       fast-json-stable-stringify: 2.1.0
       graceful-fs: 4.2.11
-      jest-haste-map: 29.6.3
+      jest-haste-map: 29.6.4
       jest-regex-util: 29.6.3
       jest-util: 29.6.3
       micromatch: 4.0.5
@@ -947,7 +937,7 @@ packages:
       '@babel/core': ^7.8.0
     dependencies:
       '@babel/core': 7.22.10
-      '@jest/transform': 29.6.3
+      '@jest/transform': 29.6.4
       '@types/babel__core': 7.20.1
       babel-plugin-istanbul: 6.1.1
       babel-preset-jest: 29.6.3(@babel/core@7.22.10)
@@ -1655,16 +1645,6 @@ packages:
       - supports-color
     dev: true
 
-  /jest-diff@29.6.3:
-    resolution: {integrity: sha512-3sw+AdWnwH9sSNohMRKA7JiYUJSRr/WS6+sEFfBuhxU5V5GlEVKfvUn8JuMHE0wqKowemR1C2aHy8VtXbaV8dQ==}
-    engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
-    dependencies:
-      chalk: 4.1.2
-      diff-sequences: 29.6.3
-      jest-get-type: 29.6.3
-      pretty-format: 29.6.3
-    dev: true
-
   /jest-diff@29.6.4:
     resolution: {integrity: sha512-9F48UxR9e4XOEZvoUXEHSWY4qC4zERJaOfrbBg9JpbJOO43R1vN76REt/aMGZoY6GD5g84nnJiBIVlscegefpw==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
@@ -1761,7 +1741,7 @@ packages:
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     dependencies:
       chalk: 4.1.2
-      jest-diff: 29.6.3
+      jest-diff: 29.6.4
       jest-get-type: 29.6.3
       pretty-format: 29.6.3
     dev: true
@@ -1834,7 +1814,7 @@ packages:
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     dependencies:
       jest-regex-util: 29.6.3
-      jest-snapshot: 29.6.3
+      jest-snapshot: 29.6.4
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -1845,7 +1825,7 @@ packages:
     dependencies:
       chalk: 4.1.2
       graceful-fs: 4.2.11
-      jest-haste-map: 29.6.3
+      jest-haste-map: 29.6.4
       jest-pnp-resolver: 1.2.3(jest-resolve@29.6.3)
       jest-util: 29.6.3
       jest-validate: 29.6.3
@@ -1876,7 +1856,7 @@ packages:
       '@jest/console': 29.6.4
       '@jest/environment': 29.6.4
       '@jest/test-result': 29.6.4
-      '@jest/transform': 29.6.3
+      '@jest/transform': 29.6.4
       '@jest/types': 29.6.3
       '@types/node': 20.5.6
       chalk: 4.1.2
@@ -1884,7 +1864,7 @@ packages:
       graceful-fs: 4.2.11
       jest-docblock: 29.6.3
       jest-environment-node: 29.6.4
-      jest-haste-map: 29.6.3
+      jest-haste-map: 29.6.4
       jest-leak-detector: 29.6.3
       jest-message-util: 29.6.3
       jest-resolve: 29.6.3
@@ -1907,7 +1887,7 @@ packages:
       '@jest/globals': 29.6.3
       '@jest/source-map': 29.6.3
       '@jest/test-result': 29.6.4
-      '@jest/transform': 29.6.3
+      '@jest/transform': 29.6.4
       '@jest/types': 29.6.3
       '@types/node': 20.5.6
       chalk: 4.1.2
@@ -1915,12 +1895,12 @@ packages:
       collect-v8-coverage: 1.0.2
       glob: 7.2.3
       graceful-fs: 4.2.11
-      jest-haste-map: 29.6.3
+      jest-haste-map: 29.6.4
       jest-message-util: 29.6.3
       jest-mock: 29.6.3
       jest-regex-util: 29.6.3
       jest-resolve: 29.6.3
-      jest-snapshot: 29.6.3
+      jest-snapshot: 29.6.4
       jest-util: 29.6.3
       slash: 3.0.0
       strip-bom: 4.0.0
@@ -1954,34 +1934,6 @@ packages:
       jest-util: 29.6.3
       slash: 3.0.0
       strip-bom: 4.0.0
-    transitivePeerDependencies:
-      - supports-color
-    dev: true
-
-  /jest-snapshot@29.6.3:
-    resolution: {integrity: sha512-66Iu7H1ojiveQMGFnKecHIZPPPBjZwfQEnF6wxqpxGf57sV3YSUtAb5/sTKM5TPa3OndyxZp1wxHFbmgVhc53w==}
-    engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
-    dependencies:
-      '@babel/core': 7.22.10
-      '@babel/generator': 7.22.10
-      '@babel/plugin-syntax-jsx': 7.22.5(@babel/core@7.22.10)
-      '@babel/plugin-syntax-typescript': 7.22.5(@babel/core@7.22.10)
-      '@babel/types': 7.22.11
-      '@jest/expect-utils': 29.6.3
-      '@jest/transform': 29.6.3
-      '@jest/types': 29.6.3
-      babel-preset-current-node-syntax: 1.0.1(@babel/core@7.22.10)
-      chalk: 4.1.2
-      expect: 29.6.3
-      graceful-fs: 4.2.11
-      jest-diff: 29.6.3
-      jest-get-type: 29.6.3
-      jest-matcher-utils: 29.6.3
-      jest-message-util: 29.6.3
-      jest-util: 29.6.3
-      natural-compare: 1.4.0
-      pretty-format: 29.6.3
-      semver: 7.5.4
     transitivePeerDependencies:
       - supports-color
     dev: true
