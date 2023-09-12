@@ -50,7 +50,7 @@ jobs:
       run: echo "table=csv2dynamodb-test-$(date +%Y%m%d-%H%M%S)" >> $GITHUB_OUTPUT
 
     - name: configure aws credentials
-      uses: aws-actions/configure-aws-credentials@v3
+      uses: aws-actions/configure-aws-credentials@v4
       with:
         role-to-assume: ${{ secrets.AWS_OIDC_ROLE_ARN }}
         role-session-name: GitHubActions
@@ -68,7 +68,7 @@ jobs:
 
     steps:
     - name: Configure AWS Credentials
-      uses: aws-actions/configure-aws-credentials@v3
+      uses: aws-actions/configure-aws-credentials@v4
       with:
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY }}
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
@@ -107,7 +107,7 @@ jobs:
       run: |
         npm -g i npm aws-cdk
     - name: configure aws credentials
-      uses: aws-actions/configure-aws-credentials@v3
+      uses: aws-actions/configure-aws-credentials@v4
       with:
         role-to-assume: ${{ secrets.AWS_OIDC_ROLE_ARN }}
         role-session-name: GitHubActions
