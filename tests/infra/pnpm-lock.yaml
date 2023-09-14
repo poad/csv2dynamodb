@@ -23,8 +23,8 @@ devDependencies:
     specifier: ^20.6.0
     version: 20.6.0
   aws-cdk:
-    specifier: ^2.95.1
-    version: 2.95.1
+    specifier: ^2.96.0
+    version: 2.96.0
   jest:
     specifier: ^29.7.0
     version: 29.7.0(@types/node@20.6.0)(ts-node@10.9.1)
@@ -880,8 +880,8 @@ packages:
       - table
       - yaml
 
-  /aws-cdk@2.95.1:
-    resolution: {integrity: sha512-KUJ63n2cB6qxpsHARmMWDhu8VITA7rKvYybbfS7BaBpXl4Tb9Bt/mEAY1EeVeyO/mpInvSRpMpdjyqE0kNAKtA==}
+  /aws-cdk@2.96.0:
+    resolution: {integrity: sha512-Zk/6q6taSqeKtWFmDqpdh9LQuB9ZKTLj7eiFCvUtGRP9Zo9Td13tj6Gxg6i/YDeeJT1oSIN3gD+0jQ4Yj5p/4A==}
     engines: {node: '>= 14.15.0'}
     hasBin: true
     optionalDependencies:
