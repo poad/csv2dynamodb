@@ -984,7 +984,7 @@ packages:
       caniuse-lite: 1.0.30001538
       electron-to-chromium: 1.4.525
       node-releases: 2.0.13
-      update-browserslist-db: 1.0.11(browserslist@4.21.10)
+      update-browserslist-db: 1.0.12(browserslist@4.21.10)
     dev: true
 
   /bs-logger@0.2.6:
@@ -2481,8 +2481,8 @@ packages:
     engines: {node: '>= 10.0.0'}
     dev: false
 
-  /update-browserslist-db@1.0.11(browserslist@4.21.10):
-    resolution: {integrity: sha512-dCwEFf0/oT85M1fHBg4F0jtLwJrutGoHSQXCh7u4o2t1drG+c0a9Flnqww6XUKSfQMPpJBRjU8d4RXB09qtvaA==}
+  /update-browserslist-db@1.0.12(browserslist@4.21.10):
+    resolution: {integrity: sha512-tE1smlR58jxbFMtrMpFNRmsrOXlpNXss965T1CrpwuZUzUAg/TBQc94SpyhDLSzrqrJS9xTRBthnZAGcE1oaxg==}
     hasBin: true
     peerDependencies:
       browserslist: '>= 4.21.0'
