@@ -1533,7 +1533,7 @@ packages:
       jest-util: 29.7.0
       p-limit: 3.1.0
       pretty-format: 29.7.0
-      pure-rand: 6.0.3
+      pure-rand: 6.0.4
       slash: 3.0.0
       stack-utils: 2.0.6
     transitivePeerDependencies:
@@ -2177,8 +2177,8 @@ packages:
     engines: {node: '>=6'}
     dev: false
 
-  /pure-rand@6.0.3:
-    resolution: {integrity: sha512-KddyFewCsO0j3+np81IQ+SweXLDnDQTs5s67BOnrYmYe/yNmUhttQyGsYzy8yUnoljGAQ9sl38YB4vH8ur7Y+w==}
+  /pure-rand@6.0.4:
+    resolution: {integrity: sha512-LA0Y9kxMYv47GIPJy6MI84fqTd2HmYZI83W/kM/SkKfDlajnZYfmXFTxkbY+xSBPkLJxltMa9hIkmdc29eguMA==}
     dev: true
 
   /react-is@18.2.0:
