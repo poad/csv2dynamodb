@@ -701,7 +701,7 @@ packages:
       '@babel/parser': 7.23.0
       '@babel/types': 7.23.0
       '@types/babel__generator': 7.6.6
-      '@types/babel__template': 7.4.3
+      '@types/babel__template': 7.4.4
       '@types/babel__traverse': 7.20.3
     dev: true
 
@@ -711,8 +711,8 @@ packages:
       '@babel/types': 7.23.0
     dev: true
 
-  /@types/babel__template@7.4.3:
-    resolution: {integrity: sha512-ciwyCLeuRfxboZ4isgdNZi/tkt06m8Tw6uGbBSBgWrnnZGNXiEyM27xc/PjXGQLqlZ6ylbgHMnm7ccF9tCkOeQ==}
+  /@types/babel__template@7.4.4:
+    resolution: {integrity: sha512-h/NUaSyG5EyxBIp8YRxo4RMe2/qQgvyowRwVMzhYhBCONbW8PUsg4lkFMrhgZhUe5z3L3MiLDuvyJ/CaPa2A8A==}
     dependencies:
       '@babel/parser': 7.23.0
       '@babel/types': 7.23.0
