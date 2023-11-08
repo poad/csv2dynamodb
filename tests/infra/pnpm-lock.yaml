@@ -763,14 +763,14 @@ packages:
     resolution: {integrity: sha512-g7CK9nHdwjK2n0ymT2CW698FuWJRIx+RP6embAzZ2Qi8/ilIrA1Imt2LVSeHUzKvpoi7BhmmQcXz95eS0f2JXw==}
     dev: true
 
-  /@types/yargs-parser@21.0.2:
-    resolution: {integrity: sha512-5qcvofLPbfjmBfKaLfj/+f+Sbd6pN4zl7w7VSVI5uz7m9QZTuB2aZAa2uo1wHFBNN2x6g/SoTkXmd8mQnQF2Cw==}
+  /@types/yargs-parser@21.0.3:
+    resolution: {integrity: sha512-I4q9QU9MQv4oEOz4tAHJtNz1cwuLxn2F3xcc2iV5WdqLPpUnj30aUuxt1mAxYTG+oe8CZMV/+6rU4S4gRDzqtQ==}
     dev: true
 
   /@types/yargs@17.0.30:
     resolution: {integrity: sha512-3SJLzYk3yz3EgI9I8OLoH06B3PdXIoU2imrBZzaGqUtUXf5iUNDtmAfCGuQrny1bnmyjh/GM/YNts6WK5jR5Rw==}
     dependencies:
-      '@types/yargs-parser': 21.0.2
+      '@types/yargs-parser': 21.0.3
     dev: true
 
   /acorn-walk@8.3.0:
