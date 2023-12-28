@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   aws-cdk-lib:
-    specifier: ^2.116.1
-    version: 2.116.1(constructs@10.3.0)
+    specifier: ^2.117.0
+    version: 2.117.0(constructs@10.3.0)
   constructs:
     specifier: ^10.3.0
     version: 10.3.0
@@ -833,8 +833,8 @@ packages:
       sprintf-js: 1.0.3
     dev: true
 
-  /aws-cdk-lib@2.116.1(constructs@10.3.0):
-    resolution: {integrity: sha512-3j9kUHZFp/Jl79utnsBB2xW2u+sNfjpliQtTPQlW0i7J12oxjD2rHU4AJV741cKMxnA9VrHnRyJF9NTryji8yw==}
+  /aws-cdk-lib@2.117.0(constructs@10.3.0):
+    resolution: {integrity: sha512-My5T4hn34H6+tnZxKK2VlcvGI2N5SjqGt9lXWADcahdobuUcNizYrls7h/vcQ3BfwcZ5/tHTKtivkNyL8I1LDg==}
     engines: {node: '>= 14.15.0'}
     peerDependencies:
       constructs: ^10.0.0
