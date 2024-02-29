@@ -84,8 +84,8 @@ packages:
       '@babel/helper-module-transforms': 7.23.3(@babel/core@7.23.9)
       '@babel/helpers': 7.24.0
       '@babel/parser': 7.24.0
-      '@babel/template': 7.23.9
-      '@babel/traverse': 7.23.9
+      '@babel/template': 7.24.0
+      '@babel/traverse': 7.24.0
       '@babel/types': 7.24.0
       convert-source-map: 2.0.0
       debug: 4.3.4
@@ -349,15 +349,6 @@ packages:
       '@babel/helper-plugin-utils': 7.24.0
     dev: true
 
-  /@babel/template@7.23.9:
-    resolution: {integrity: sha512-+xrD2BWLpvHKNmX2QbpdpsBaWnRxahMwJjO+KZk2JOElj5nSmKezyS1B4u+QbHMTX69t4ukm6hh9lsYQ7GHCKA==}
-    engines: {node: '>=6.9.0'}
-    dependencies:
-      '@babel/code-frame': 7.23.5
-      '@babel/parser': 7.24.0
-      '@babel/types': 7.24.0
-    dev: true
-
   /@babel/template@7.24.0:
     resolution: {integrity: sha512-Bkf2q8lMB0AFpX0NFEqSbx1OkTHf0f+0j82mkw+ZpzBnkk7e9Ql0891vlfgi+kHwOk8tQjiQHpqh4LaSa0fKEA==}
     engines: {node: '>=6.9.0'}
@@ -365,24 +356,6 @@ packages:
       '@babel/code-frame': 7.23.5
       '@babel/parser': 7.24.0
       '@babel/types': 7.24.0
-    dev: true
-
-  /@babel/traverse@7.23.9:
-    resolution: {integrity: sha512-I/4UJ9vs90OkBtY6iiiTORVMyIhJ4kAVmsKo9KFc8UOxMeUfi2hvtIBsET5u9GizXE6/GFSuKCTNfgCswuEjRg==}
-    engines: {node: '>=6.9.0'}
-    dependencies:
-      '@babel/code-frame': 7.23.5
-      '@babel/generator': 7.23.6
-      '@babel/helper-environment-visitor': 7.22.20
-      '@babel/helper-function-name': 7.23.0
-      '@babel/helper-hoist-variables': 7.22.5
-      '@babel/helper-split-export-declaration': 7.22.6
-      '@babel/parser': 7.24.0
-      '@babel/types': 7.24.0
-      debug: 4.3.4
-      globals: 11.12.0
-    transitivePeerDependencies:
-      - supports-color
     dev: true
 
   /@babel/traverse@7.24.0:
@@ -927,7 +900,7 @@ packages:
     resolution: {integrity: sha512-ESAc/RJvGTFEzRwOTT4+lNDk/GNHMkKbNzsvT0qKRfDyyYTskxB5rnU2njIDYVxXCBHHEI1c0YwHob3WaYujOg==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     dependencies:
-      '@babel/template': 7.23.9
+      '@babel/template': 7.24.0
       '@babel/types': 7.24.0
       '@types/babel__core': 7.20.5
       '@types/babel__traverse': 7.20.5
