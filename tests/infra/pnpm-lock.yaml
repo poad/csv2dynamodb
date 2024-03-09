@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   aws-cdk-lib:
-    specifier: ^2.131.0
-    version: 2.131.0(constructs@10.3.0)
+    specifier: ^2.132.0
+    version: 2.132.0(constructs@10.3.0)
   constructs:
     specifier: ^10.3.0
     version: 10.3.0
@@ -23,8 +23,8 @@ devDependencies:
     specifier: ^20.11.25
     version: 20.11.25
   aws-cdk:
-    specifier: ^2.131.0
-    version: 2.131.0
+    specifier: ^2.132.0
+    version: 2.132.0
   jest:
     specifier: ^29.7.0
     version: 29.7.0(@types/node@20.11.25)(ts-node@10.9.2)
@@ -833,8 +833,8 @@ packages:
       sprintf-js: 1.0.3
     dev: true
 
-  /aws-cdk-lib@2.131.0(constructs@10.3.0):
-    resolution: {integrity: sha512-9XLgiTgY+q0S3K93VPeJO0chIN8BZwZ3aSrILvF868Dz+0NTNrD2m5M0xGK5Rw0uoJS+N+DvGaz/2hLAiVqcBw==}
+  /aws-cdk-lib@2.132.0(constructs@10.3.0):
+    resolution: {integrity: sha512-auztTTYy8j62MmRZNdM7Vd8eQ5eP3xLMhrrILhDZf3DiSDD0lyYL0hv98VD4XPkWGMQ8yOmo5nZ3s/zD7cnKlw==}
     engines: {node: '>= 14.15.0'}
     peerDependencies:
       constructs: ^10.0.0
@@ -857,8 +857,8 @@ packages:
       - yaml
       - mime-types
 
-  /aws-cdk@2.131.0:
-    resolution: {integrity: sha512-ji+MwGFGC88HE/EqV6/VARBp5mu3nXIDa/GYwtGycJqu6WqXhNZXWeDH0JsWaY6+BSUdpY6pr6KWpV+MDyVkDg==}
+  /aws-cdk@2.132.0:
+    resolution: {integrity: sha512-C2j9iQqpl21YGuip02tIAAkgkDZNDDWeEoWfPcdXCJlQ9DVpYTJG24QxtY0rWflJ7Xkn+iAozdjlCrXSxYeAfA==}
     engines: {node: '>= 14.15.0'}
     hasBin: true
     optionalDependencies:
@@ -961,7 +961,7 @@ packages:
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001596
-      electron-to-chromium: 1.4.698
+      electron-to-chromium: 1.4.699
       node-releases: 2.0.14
       update-browserslist-db: 1.0.13(browserslist@4.23.0)
     dev: true
@@ -1157,8 +1157,8 @@ packages:
     engines: {node: '>=0.3.1'}
     dev: true
 
-  /electron-to-chromium@1.4.698:
-    resolution: {integrity: sha512-f9iZD1t3CLy1AS6vzM5EKGa6p9pRcOeEFXRFbaG2Ta+Oe7MkfRQ3fsvPYidzHe1h4i0JvIvpcY55C+B6BZNGtQ==}
+  /electron-to-chromium@1.4.699:
+    resolution: {integrity: sha512-I7q3BbQi6e4tJJN5CRcyvxhK0iJb34TV8eJQcgh+fR2fQ8miMgZcEInckCo1U9exDHbfz7DLDnFn8oqH/VcRKw==}
     dev: true
 
   /emittery@0.13.1:
