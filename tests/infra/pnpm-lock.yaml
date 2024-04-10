@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   aws-cdk-lib:
-    specifier: ^2.136.0
-    version: 2.136.0(constructs@10.3.0)
+    specifier: ^2.136.1
+    version: 2.136.1(constructs@10.3.0)
   constructs:
     specifier: ^10.3.0
     version: 10.3.0
@@ -23,8 +23,8 @@ devDependencies:
     specifier: ^20.12.7
     version: 20.12.7
   aws-cdk:
-    specifier: ^2.136.0
-    version: 2.136.0
+    specifier: ^2.136.1
+    version: 2.136.1
   jest:
     specifier: ^29.7.0
     version: 29.7.0(@types/node@20.12.7)(ts-node@10.9.2)
@@ -834,8 +834,8 @@ packages:
       sprintf-js: 1.0.3
     dev: true
 
-  /aws-cdk-lib@2.136.0(constructs@10.3.0):
-    resolution: {integrity: sha512-zdkWNe91mvZH6ESghUoIxB8ORoreExg2wowTLEVfy3vWY1a6n69crxk8mkCG+vn6GhXEnEPpovoG1QV8BpXTpA==}
+  /aws-cdk-lib@2.136.1(constructs@10.3.0):
+    resolution: {integrity: sha512-2wlTABbgaVqARlCGyG88uY4oSNnXdGxD54bb71VxM6YBKk2qxUiKdUcu5wKeSiz+/VNT8Kv7nItTPPFxEY82RA==}
     engines: {node: '>= 14.15.0'}
     peerDependencies:
       constructs: ^10.0.0
@@ -858,8 +858,8 @@ packages:
       - yaml
       - mime-types
 
-  /aws-cdk@2.136.0:
-    resolution: {integrity: sha512-MVSE+AERoP0D1qXlkhKQOzs22QVulGleX1yJTkWzoYhEyseEmR8EiFJcmyEhJku/swmY0KDpVlT9R62dRG5+JQ==}
+  /aws-cdk@2.136.1:
+    resolution: {integrity: sha512-CkmyGrXFCeKD3P1uFRIwrx3C5uFtnZhlKwItpAcXPdPEcnfwsMUJuh/QdcKXXrP7hKsxqrTivrRLwcnFZ9KvyA==}
     engines: {node: '>= 14.15.0'}
     hasBin: true
     optionalDependencies:
