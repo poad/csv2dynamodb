@@ -18,7 +18,7 @@ jobs:
         id: metadata
         uses: dependabot/fetch-metadata@v2
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Approve & enable auto-merge for Dependabot Pull Request
         env:
@@ -29,14 +29,3 @@ jobs:
           gh pr review --approve "$PR_URL"
           gh pr edit "$PR_URL" -t "(auto merged) $PR_TITLE"
           gh pr merge --auto --merge "$PR_URL"
-
-      - name: Slack Notification (not success)
-        uses: lazy-actions/slatify@master
-        if: ${{ ! success() }}
-        continue-on-error: true
-        with:
-          job_name: '*auto-merge*'
-          type: ${{ job.status }}
-          icon_emoji: ":octocat:"
-          url: ${{ secrets.SLACK_WEBHOOK }}
-          token: ${{ secrets.GITHUB_TOKEN }}
