@@ -34,6 +34,7 @@ jobs:
     - uses: pnpm/action-setup@v4
       name: Install pnpm
       with:
+        package_json_file: tests/infra/package.json
         run_install: |
           - recursive: false
             cwd: tests/infra
@@ -82,21 +83,20 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
+    - name: Use Node.js 20.x
+      uses: actions/setup-node@v4
+      with:
+        node-version: 20.x
+        check-latest: true
 
     - uses: pnpm/action-setup@v4
       name: Install pnpm
-      id: pnpm-install
       with:
-        version: 8.6.3
+        package_json_file: tests/infra/package.json
         run_install: |
           - recursive: false
             cwd: tests/infra
             args: [--no-frozen-lockfile]
-    - name: Use Node.js 18.x
-      uses: actions/setup-node@v4
-      with:
-        node-version: 18.x
-        check-latest: true
 
     - name: Install AWS CDK and pnpm
       run: |
