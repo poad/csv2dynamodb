@@ -24,24 +24,22 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-
-    - uses: pnpm/action-setup@v4
-      name: Install pnpm
-      id: pnpm-install
-      with:
-        version: latest
-        run_install: |
-          - recursive: false
-            cwd: tests/infra
-            args: [--no-frozen-lockfile]
-          - args: [--global, aws-cdk]
-
+    
     - name: Use Node.js 20.x
       uses: actions/setup-node@v4
       with:
         node-version: 20.x
         check-latest: true
   
+    - uses: pnpm/action-setup@v4
+      name: Install pnpm
+      with:
+        run_install: |
+          - recursive: false
+            cwd: tests/infra
+            args: [--no-frozen-lockfile]
+          - args: [--global, aws-cdk]
+
     - name: generate table name
       id: gen-table-name
       run: echo "table=csv2dynamodb-test-$(date +%Y%m%d-%H%M%S)" >> $GITHUB_OUTPUT
