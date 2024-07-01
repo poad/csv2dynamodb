@@ -774,8 +774,8 @@ packages:
     resolution: {integrity: sha512-pzqtp31nLv/XFOzXGuvhCb8qhjmTVo5vjVk19XE4CRlSWz0KoeJ3bw9XsA7nOp9YBf4qHjwBxkDzKcME/J29Yg==}
     engines: {node: '>=8'}
 
-  istanbul-lib-instrument@6.0.2:
-    resolution: {integrity: sha512-1WUsZ9R1lA0HtBSohTkm39WTPlNKSJ5iFk7UwqXkBLoHQT+hfqPsfsTDVuZdKGaBwn7din9bS7SsnoAr943hvw==}
+  istanbul-lib-instrument@6.0.3:
+    resolution: {integrity: sha512-Vtgk7L/R2JHyyGW07spoFlB8/lpjiOLTjMdms6AFMraYt3BaJauod/NGrfnVG/y4Ix1JEuMRPDPEj2ua+zz1/Q==}
     engines: {node: '>=10'}
 
   istanbul-lib-report@3.0.1:
@@ -1632,7 +1632,7 @@ snapshots:
       glob: 7.2.3
       graceful-fs: 4.2.11
       istanbul-lib-coverage: 3.2.2
-      istanbul-lib-instrument: 6.0.2
+      istanbul-lib-instrument: 6.0.3
       istanbul-lib-report: 3.0.1
       istanbul-lib-source-maps: 4.0.1
       istanbul-reports: 3.1.7
@@ -2145,7 +2145,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  istanbul-lib-instrument@6.0.2:
+  istanbul-lib-instrument@6.0.3:
     dependencies:
       '@babel/core': 7.24.7
       '@babel/parser': 7.24.7
