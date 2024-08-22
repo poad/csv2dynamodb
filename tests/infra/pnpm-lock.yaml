@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       aws-cdk-lib:
-        specifier: ^2.153.0
-        version: 2.153.0(constructs@10.3.0)
+        specifier: ^2.154.0
+        version: 2.154.0(constructs@10.3.0)
       constructs:
         specifier: ^10.3.0
         version: 10.3.0
@@ -54,6 +54,13 @@ packages:
 
   '@aws-cdk/asset-node-proxy-agent-v6@2.0.3':
     resolution: {integrity: sha512-twhuEG+JPOYCYPx/xy5uH2+VUsIEhPTzDY0F1KuB+ocjWWB/KEDiOVL19nHvbPCB6fhWnkykXEMJ4HHcKvjtvg==}
+
+  '@aws-cdk/cloud-assembly-schema@36.0.14':
+    resolution: {integrity: sha512-8ecWc6vjOXzQjFuzLOX4L28u8ZQn13vNOd6N2cYu26+LuZHoxZAIyyITldLNazxbiqJ1aNSsa++GlvO/wEpGjQ==}
+    engines: {node: '>= 18.18.0'}
+    bundledDependencies:
+      - jsonschema
+      - semver
 
   '@babel/code-frame@7.24.7':
     resolution: {integrity: sha512-BcYH1CVJBO9tvyIZ2jVeXgSIMvGZ2FDRvDdOIVQyuklNKSsx+eppDEBq/g47Ayw+RqNFE+URvOShmf+f/qwAlA==}
@@ -425,8 +432,8 @@ packages:
   async@3.2.6:
     resolution: {integrity: sha512-htCUDlxyyCLMgaM3xXg0C0LW2xqfuQ6p05pCEIsXuyQ+a1koYKTuBMzRNwmybfLgvJDMd0r1LTn4+E0Ti6C2AA==}
 
-  aws-cdk-lib@2.153.0:
-    resolution: {integrity: sha512-wj8NnZb/F/SZGz7SqMgXL5eAu4CkJdjUIzDDXh16Fdo7vE8o59qFGZz8m0vA4aTXG10jtWxnJwAfoQPgzXqFCw==}
+  aws-cdk-lib@2.154.0:
+    resolution: {integrity: sha512-r6WmN+pk0k328Ig7yn9tqst5QR4XmyMCUG2artMgzA1YfDd4nDaP9zgJlHXIMOfVRbhgoCBX1XSSqLtN5Losgg==}
     engines: {node: '>= 14.15.0'}
     peerDependencies:
       constructs: ^10.0.0
@@ -1341,6 +1348,8 @@ snapshots:
 
   '@aws-cdk/asset-node-proxy-agent-v6@2.0.3': {}
 
+  '@aws-cdk/cloud-assembly-schema@36.0.14': {}
+
   '@babel/code-frame@7.24.7':
     dependencies:
       '@babel/highlight': 7.24.7
@@ -1845,11 +1854,12 @@ snapshots:
 
   async@3.2.6: {}
 
-  aws-cdk-lib@2.153.0(constructs@10.3.0):
+  aws-cdk-lib@2.154.0(constructs@10.3.0):
     dependencies:
       '@aws-cdk/asset-awscli-v1': 2.2.202
       '@aws-cdk/asset-kubectl-v20': 2.1.2
       '@aws-cdk/asset-node-proxy-agent-v6': 2.0.3
+      '@aws-cdk/cloud-assembly-schema': 36.0.14
       constructs: 10.3.0
 
   aws-cdk@2.154.0:
