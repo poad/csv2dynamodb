@@ -46,8 +46,8 @@ packages:
     resolution: {integrity: sha512-30iZtAPgz+LTIYoeivqYo853f02jBYSd5uGnGpkFV0M3xOt9aN73erkgYAmZU43x4VfqcnLxW9Kpg3R5LC4YYw==}
     engines: {node: '>=6.0.0'}
 
-  '@aws-cdk/asset-awscli-v1@2.2.219':
-    resolution: {integrity: sha512-pwkEucYvK3MjoVShBnCWMLKk8/nAhElEM7OPcen/hSlsYoPRkZeZbPDM2XmTjvfUKWD5TQmobs39iBSrgbb1gg==}
+  '@aws-cdk/asset-awscli-v1@2.2.220':
+    resolution: {integrity: sha512-2eXZnnIgwWmXc7eRh8mRKPp6yHTKiQrLziRX/oVSfp4M6Jn2no0QFKJoHWqziF5MDQa5TF8qhD4FGsls/1nYPg==}
 
   '@aws-cdk/asset-kubectl-v20@2.1.3':
     resolution: {integrity: sha512-cDG1w3ieM6eOT9mTefRuTypk95+oyD7P5X/wRltwmYxU7nZc3+076YEVS6vrjDKr3ADYbfn0lDKpfB1FBtO9CQ==}
@@ -55,8 +55,8 @@ packages:
   '@aws-cdk/asset-node-proxy-agent-v6@2.1.0':
     resolution: {integrity: sha512-7bY3J8GCVxLupn/kNmpPc5VJz8grx+4RKfnnJiO1LG+uxkZfANZG3RMHhE+qQxxwkyQ9/MfPtTpf748UhR425A==}
 
-  '@aws-cdk/cloud-assembly-schema@39.2.0':
-    resolution: {integrity: sha512-ymGG+ab4xN40iPx9O0zuuvu6qZi4RY+hr3YScSg5Ye0dkcchQ49RBINHrqqy7fZvcMbV7bkxf/Cxj9yxSF3BnA==}
+  '@aws-cdk/cloud-assembly-schema@39.2.1':
+    resolution: {integrity: sha512-cz18QG02p++ivQ5wdjLI8TyMk1p6kwQc1ExeL2A9RoUg1gCnwEBrkJMhiWgTroWBblT0GF0MqSvzkyeEdHqn2A==}
     bundledDependencies:
       - jsonschema
       - semver
@@ -602,8 +602,8 @@ packages:
     engines: {node: '>=0.10.0'}
     hasBin: true
 
-  electron-to-chromium@1.5.83:
-    resolution: {integrity: sha512-LcUDPqSt+V0QmI47XLzZrz5OqILSMGsPFkDYus22rIbgorSvBYEFqq854ltTmUdHkY92FSdAAvsh4jWEULMdfQ==}
+  electron-to-chromium@1.5.84:
+    resolution: {integrity: sha512-I+DQ8xgafao9Ha6y0qjHHvpZ9OfyA1qKlkHkjywxzniORU2awxyz7f/iVJcULmrF2yrM3nHQf+iDjJtbbexd/g==}
 
   emittery@0.13.1:
     resolution: {integrity: sha512-DeWwawk6r5yR9jFgnDKYt4sLS0LmHJJi3ZOnb5/JdbYwj3nW+FxQnHIjhBKz8YLC7oRNPVM9NQ47I3CVx34eqQ==}
@@ -1303,13 +1303,13 @@ snapshots:
       '@jridgewell/gen-mapping': 0.3.8
       '@jridgewell/trace-mapping': 0.3.25
 
-  '@aws-cdk/asset-awscli-v1@2.2.219': {}
+  '@aws-cdk/asset-awscli-v1@2.2.220': {}
 
   '@aws-cdk/asset-kubectl-v20@2.1.3': {}
 
   '@aws-cdk/asset-node-proxy-agent-v6@2.1.0': {}
 
-  '@aws-cdk/cloud-assembly-schema@39.2.0': {}
+  '@aws-cdk/cloud-assembly-schema@39.2.1': {}
 
   '@babel/code-frame@7.26.2':
     dependencies:
@@ -1799,10 +1799,10 @@ snapshots:
 
   aws-cdk-lib@2.176.0(constructs@10.4.2):
     dependencies:
-      '@aws-cdk/asset-awscli-v1': 2.2.219
+      '@aws-cdk/asset-awscli-v1': 2.2.220
       '@aws-cdk/asset-kubectl-v20': 2.1.3
       '@aws-cdk/asset-node-proxy-agent-v6': 2.1.0
-      '@aws-cdk/cloud-assembly-schema': 39.2.0
+      '@aws-cdk/cloud-assembly-schema': 39.2.1
       constructs: 10.4.2
 
   aws-cdk@2.176.0:
@@ -1882,7 +1882,7 @@ snapshots:
   browserslist@4.24.4:
     dependencies:
       caniuse-lite: 1.0.30001695
-      electron-to-chromium: 1.5.83
+      electron-to-chromium: 1.5.84
       node-releases: 2.0.19
       update-browserslist-db: 1.1.2(browserslist@4.24.4)
 
@@ -1978,7 +1978,7 @@ snapshots:
     dependencies:
       jake: 10.9.2
 
-  electron-to-chromium@1.5.83: {}
+  electron-to-chromium@1.5.84: {}
 
   emittery@0.13.1: {}
 
