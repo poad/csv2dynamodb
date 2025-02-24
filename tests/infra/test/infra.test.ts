@@ -1,6 +1,7 @@
 import { Template } from 'aws-cdk-lib/assertions';
 import * as cdk from 'aws-cdk-lib';
 import * as Infra from '../lib/infra-stack';
+import { test } from 'vitest';
 
 test('Empty Stack', () => {
   const app = new cdk.App();

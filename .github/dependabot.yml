@@ -20,6 +20,10 @@ updates:
     rebase-strategy: auto
     assignees:
       - poad
+    groups:
+      cargo:
+        patterns:
+          - '*'
 
   - package-ecosystem: npm
     directory: '/tests/infra/'
@@ -31,3 +35,7 @@ updates:
     rebase-strategy: auto
     assignees:
       - poad
+    groups:
+      npm:
+        patterns:
+          - '*'
