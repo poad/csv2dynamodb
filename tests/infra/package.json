@@ -13,10 +13,10 @@
   "devDependencies": {
     "@types/node": "^22.13.9",
     "aws-cdk": "^2.1003.0",
-    "pnpm": "^10.5.2",
+    "pnpm": "^10.6.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.2",
-    "vitest": "^3.0.7"
+    "vitest": "^3.0.8"
   },
   "dependencies": {
     "aws-cdk-lib": "^2.182.0",
