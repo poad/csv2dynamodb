@@ -28,8 +28,8 @@ importers:
         specifier: ^2.1007.0
         version: 2.1007.0
       pnpm:
-        specifier: ^10.7.1
-        version: 10.7.1
+        specifier: ^10.8.0
+        version: 10.8.0
       ts-node:
         specifier: ^10.9.2
         version: 10.9.2(@types/node@22.14.0)(typescript@5.8.3)
@@ -42,8 +42,8 @@ importers:
 
 packages:
 
-  '@aws-cdk/asset-awscli-v1@2.2.230':
-    resolution: {integrity: sha512-kUnhKIYu42hqBa6a8x2/7o29ObpJgjYGQy28lZDq9awXyvpR62I2bRxrNKNR3uFUQz3ySuT9JXhGHhuZPdbnFw==}
+  '@aws-cdk/asset-awscli-v1@2.2.231':
+    resolution: {integrity: sha512-vPqD/K2pK/ALhU5r5Nafdc2nLB+LJKxNyxUmQnLsazU6AWDJfkqjHQx8m3J4Cjl2C3chQkIRMdzSDuXIlo43GA==}
 
   '@aws-cdk/asset-node-proxy-agent-v6@2.1.0':
     resolution: {integrity: sha512-7bY3J8GCVxLupn/kNmpPc5VJz8grx+4RKfnnJiO1LG+uxkZfANZG3RMHhE+qQxxwkyQ9/MfPtTpf748UhR425A==}
@@ -495,8 +495,8 @@ packages:
   picocolors@1.1.1:
     resolution: {integrity: sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==}
 
-  pnpm@10.7.1:
-    resolution: {integrity: sha512-LZLIa3ko3IKE9TSU+0IB+YPaZfD7Tw1Auq+lz2KPox2uPllo8SRm8X336XMQ4w80OmSLrqG5s1BoXa+v/99YCA==}
+  pnpm@10.8.0:
+    resolution: {integrity: sha512-DoJxTRtbQ8dGEBk8sgc0iXwdAN6J0OGEIK68WXf6E9eAqcsFc0Yk6B69gcyHbNRkeUhQZBxIuVRDJrViLKKZcQ==}
     engines: {node: '>=18.12'}
     hasBin: true
 
@@ -656,7 +656,7 @@ packages:
 
 snapshots:
 
-  '@aws-cdk/asset-awscli-v1@2.2.230': {}
+  '@aws-cdk/asset-awscli-v1@2.2.231': {}
 
   '@aws-cdk/asset-node-proxy-agent-v6@2.1.0': {}
 
@@ -876,7 +876,7 @@ snapshots:
 
   aws-cdk-lib@2.188.0(constructs@10.4.2):
     dependencies:
-      '@aws-cdk/asset-awscli-v1': 2.2.230
+      '@aws-cdk/asset-awscli-v1': 2.2.231
       '@aws-cdk/asset-node-proxy-agent-v6': 2.1.0
       '@aws-cdk/cloud-assembly-schema': 41.2.0
       constructs: 10.4.2
@@ -971,7 +971,7 @@ snapshots:
 
   picocolors@1.1.1: {}
 
-  pnpm@10.7.1: {}
+  pnpm@10.8.0: {}
 
   postcss@8.5.3:
     dependencies:
