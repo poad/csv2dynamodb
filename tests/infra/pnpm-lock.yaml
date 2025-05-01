@@ -12,7 +12,7 @@ importers:
   .:
     dependencies:
       aws-cdk-lib:
-        specifier: ^2.192.0
+        specifier: ^2.193.0
         version: 2.193.0(constructs@10.4.2)
       constructs:
         specifier: ^10.4.2
@@ -25,7 +25,7 @@ importers:
         specifier: ^22.15.3
         version: 22.15.3
       aws-cdk:
-        specifier: ^2.1012.0
+        specifier: ^2.1013.0
         version: 2.1013.0
       pnpm:
         specifier: ^10.10.0
