@@ -11,7 +11,7 @@
     "cdk": "cdk"
   },
   "devDependencies": {
-    "@types/node": "^22.15.9",
+    "@types/node": "^22.15.14",
     "aws-cdk": "^2.1013.0",
     "pnpm": "^10.10.0",
     "ts-node": "^10.9.2",
