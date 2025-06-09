@@ -25,7 +25,7 @@ importers:
         specifier: ^22.15.30
         version: 22.15.30
       aws-cdk:
-        specifier: ^2.1013.0
+        specifier: ^2.1018.0
         version: 2.1018.0
       pnpm:
         specifier: ^10.12.1
@@ -37,7 +37,7 @@ importers:
         specifier: ^5.8.3
         version: 5.8.3
       vitest:
-        specifier: ^3.1.2
+        specifier: ^3.2.2
         version: 3.2.2(@types/node@22.15.30)
 
 packages:
