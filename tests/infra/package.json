@@ -13,7 +13,7 @@
   "devDependencies": {
     "@types/node": "^24.0.12",
     "aws-cdk": "^2.1020.2",
-    "pnpm": "^10.12.4",
+    "pnpm": "^10.13.1",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3",
     "vitest": "^3.2.4"
@@ -31,5 +31,5 @@
       "esbuild"
     ]
   },
-  "packageManager": "pnpm@10.12.4"
+  "packageManager": "pnpm@10.13.1"
 }
