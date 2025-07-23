@@ -22,8 +22,8 @@ importers:
         version: 0.5.21
     devDependencies:
       '@types/node':
-        specifier: ^24.0.15
-        version: 24.0.15
+        specifier: ^24.1.0
+        version: 24.1.0
       aws-cdk:
         specifier: ^2.1021.0
         version: 2.1021.0
@@ -32,13 +32,13 @@ importers:
         version: 10.13.1
       ts-node:
         specifier: ^10.9.2
-        version: 10.9.2(@types/node@24.0.15)(typescript@5.8.3)
+        version: 10.9.2(@types/node@24.1.0)(typescript@5.8.3)
       typescript:
         specifier: ^5.8.3
         version: 5.8.3
       vitest:
         specifier: ^3.2.4
-        version: 3.2.4(@types/node@24.0.15)
+        version: 3.2.4(@types/node@24.1.0)
 
 packages:
 
@@ -346,8 +346,8 @@ packages:
   '@types/estree@1.0.8':
     resolution: {integrity: sha512-dWHzHa2WqEXI/O1E9OjrocMTKJl2mSrEolh1Iomrv6U+JuNwaHXsXx9bLu5gG7BUWFIN0skIQJQ/L1rIex4X6w==}
 
-  '@types/node@24.0.15':
-    resolution: {integrity: sha512-oaeTSbCef7U/z7rDeJA138xpG3NuKc64/rZ2qmUFkFJmnMsAPaluIifqyWd8hSSMxyP9oie3dLAqYPblag9KgA==}
+  '@types/node@24.1.0':
+    resolution: {integrity: sha512-ut5FthK5moxFKH2T1CUOC6ctR67rQRvvHdFLCD2Ql6KXmMuCrjsSsRI9UsLCm9M18BMwClv4pn327UvB7eeO1w==}
 
   '@vitest/expect@3.2.4':
     resolution: {integrity: sha512-Io0yyORnB6sikFlt8QW5K7slY4OjqNX9jmJQ02QDda8lyM6B5oNgVWoSoKPac8/kgnCUzuHQKrSLtu/uOqqrig==}
@@ -863,7 +863,7 @@ snapshots:
 
   '@types/estree@1.0.8': {}
 
-  '@types/node@24.0.15':
+  '@types/node@24.1.0':
     dependencies:
       undici-types: 7.8.0
 
@@ -875,13 +875,13 @@ snapshots:
       chai: 5.2.1
       tinyrainbow: 2.0.0
 
-  '@vitest/mocker@3.2.4(vite@7.0.5(@types/node@24.0.15))':
+  '@vitest/mocker@3.2.4(vite@7.0.5(@types/node@24.1.0))':
     dependencies:
       '@vitest/spy': 3.2.4
       estree-walker: 3.0.3
       magic-string: 0.30.17
     optionalDependencies:
-      vite: 7.0.5(@types/node@24.0.15)
+      vite: 7.0.5(@types/node@24.1.0)
 
   '@vitest/pretty-format@3.2.4':
     dependencies:
@@ -1093,14 +1093,14 @@ snapshots:
 
   tinyspy@4.0.3: {}
 
-  ts-node@10.9.2(@types/node@24.0.15)(typescript@5.8.3):
+  ts-node@10.9.2(@types/node@24.1.0)(typescript@5.8.3):
     dependencies:
       '@cspotcode/source-map-support': 0.8.1
       '@tsconfig/node10': 1.0.11
       '@tsconfig/node12': 1.0.11
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.4
-      '@types/node': 24.0.15
+      '@types/node': 24.1.0
       acorn: 8.15.0
       acorn-walk: 8.3.4
       arg: 4.1.3
@@ -1117,13 +1117,13 @@ snapshots:
 
   v8-compile-cache-lib@3.0.1: {}
 
-  vite-node@3.2.4(@types/node@24.0.15):
+  vite-node@3.2.4(@types/node@24.1.0):
     dependencies:
       cac: 6.7.14
       debug: 4.4.1
       es-module-lexer: 1.7.0
       pathe: 2.0.3
-      vite: 7.0.5(@types/node@24.0.15)
+      vite: 7.0.5(@types/node@24.1.0)
     transitivePeerDependencies:
       - '@types/node'
       - jiti
@@ -1138,7 +1138,7 @@ snapshots:
       - tsx
       - yaml
 
-  vite@7.0.5(@types/node@24.0.15):
+  vite@7.0.5(@types/node@24.1.0):
     dependencies:
       esbuild: 0.25.8
       fdir: 6.4.6(picomatch@4.0.3)
@@ -1147,14 +1147,14 @@ snapshots:
       rollup: 4.45.1
       tinyglobby: 0.2.14
     optionalDependencies:
-      '@types/node': 24.0.15
+      '@types/node': 24.1.0
       fsevents: 2.3.3
 
-  vitest@3.2.4(@types/node@24.0.15):
+  vitest@3.2.4(@types/node@24.1.0):
     dependencies:
       '@types/chai': 5.2.2
       '@vitest/expect': 3.2.4
-      '@vitest/mocker': 3.2.4(vite@7.0.5(@types/node@24.0.15))
+      '@vitest/mocker': 3.2.4(vite@7.0.5(@types/node@24.1.0))
       '@vitest/pretty-format': 3.2.4
       '@vitest/runner': 3.2.4
       '@vitest/snapshot': 3.2.4
@@ -1172,11 +1172,11 @@ snapshots:
       tinyglobby: 0.2.14
       tinypool: 1.1.1
       tinyrainbow: 2.0.0
-      vite: 7.0.5(@types/node@24.0.15)
-      vite-node: 3.2.4(@types/node@24.0.15)
+      vite: 7.0.5(@types/node@24.1.0)
+      vite-node: 3.2.4(@types/node@24.1.0)
       why-is-node-running: 2.3.0
     optionalDependencies:
-      '@types/node': 24.0.15
+      '@types/node': 24.1.0
     transitivePeerDependencies:
       - jiti
       - less
