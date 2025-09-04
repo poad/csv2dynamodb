@@ -2,7 +2,7 @@
 import 'source-map-support/register';
 import * as cdk from 'aws-cdk-lib';
 import { InfraStack } from '../lib/infra-stack';
-import assert = require('assert');
+import assert from 'assert';
 
 const app = new cdk.App();
 

@@ -1,0 +1,3 @@
+enablePrePostScripts: true
+autoInstallPeers: true
+strictPeerDependencies: true
