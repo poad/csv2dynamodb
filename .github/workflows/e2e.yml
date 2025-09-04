@@ -59,7 +59,7 @@ jobs:
       working-directory: tests/infra
       run: cdk deploy -c name="${TABLE_NAME}" --require-approval=never
 
-  build:
+  test:
     needs: [setup]
     runs-on: ubuntu-24.04
 
@@ -79,7 +79,7 @@ jobs:
 
   tearDown:
     runs-on: ubuntu-24.04
-    needs: [setup, build]
+    needs: [setup, test]
     if: ${{ always() }}
     steps:
     - uses: actions/checkout@v5
