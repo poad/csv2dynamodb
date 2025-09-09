@@ -11,10 +11,11 @@ on:
 env:
   CARGO_TERM_COLOR: always
 
-permissions: write-all
-
 jobs:
   configure:
+    permissions:
+      contents: write
+      pull-requests: write
     runs-on: ubuntu-latest
     if: github.actor != 'dependabot[bot]'
     steps:
