@@ -12,7 +12,7 @@
     "cdk": "cdk"
   },
   "devDependencies": {
-    "@types/node": "^24.8.0",
+    "@types/node": "^24.8.1",
     "aws-cdk": "^2.1030.0",
     "pnpm": "^10.18.3",
     "tsx": "^4.20.6",
@@ -32,5 +32,5 @@
       "esbuild"
     ]
   },
-  "packageManager": "pnpm@10.18.2"
+  "packageManager": "pnpm@10.18.3"
 }
