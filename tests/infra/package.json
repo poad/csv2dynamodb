@@ -17,7 +17,7 @@
     "pnpm": "^10.24.0",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3",
-    "vitest": "^4.0.14"
+    "vitest": "^4.0.15"
   },
   "dependencies": {
     "aws-cdk-lib": "^2.231.0",
