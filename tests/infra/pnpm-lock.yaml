@@ -13,10 +13,10 @@ importers:
     dependencies:
       aws-cdk-lib:
         specifier: ^2.232.1
-        version: 2.232.1(constructs@10.4.3)
+        version: 2.232.1(constructs@10.4.4)
       constructs:
-        specifier: ^10.4.3
-        version: 10.4.3
+        specifier: ^10.4.4
+        version: 10.4.4
       source-map-support:
         specifier: ^0.5.21
         version: 0.5.21
@@ -25,8 +25,8 @@ importers:
         specifier: ^25.0.0
         version: 25.0.0
       aws-cdk:
-        specifier: ^2.1033.0
-        version: 2.1033.0
+        specifier: ^2.1034.0
+        version: 2.1034.0
       pnpm:
         specifier: ^10.25.0
         version: 10.25.0
@@ -390,8 +390,8 @@ packages:
       - yaml
       - mime-types
 
-  aws-cdk@2.1033.0:
-    resolution: {integrity: sha512-Pit2k7cVAwxoYI7RMVsOyltuy7/HGENLupJ4KAm/d8mGzOfX+SLOo9YQsx5CKY9J6ErCZ1ViLerklTfjytvQww==}
+  aws-cdk@2.1034.0:
+    resolution: {integrity: sha512-YsIeXmMP/9eGml/eoPs64kHzNR0IVezzwuH0XrLOtUCjYNb80cmmjoCNsMn96u9rJOte1Yg3jitrHi1wTqXAqw==}
     engines: {node: '>= 18.0.0'}
     hasBin: true
 
@@ -402,8 +402,8 @@ packages:
     resolution: {integrity: sha512-p4Z49OGG5W/WBCPSS/dH3jQ73kD6tiMmUM+bckNK6Jr5JHMG3k9bg/BvKR8lKmtVBKmOiuVaV2ws8s9oSbwysg==}
     engines: {node: '>=18'}
 
-  constructs@10.4.3:
-    resolution: {integrity: sha512-3+ZB67qWGM1vEstNpj6pGaLNN1qz4gxC1CBhEUhZDZk0PqzQWY65IzC1Doq17MGPa9xa2wJ1G/DJ3swU8kWAHQ==}
+  constructs@10.4.4:
+    resolution: {integrity: sha512-lP0qC1oViYf1cutHo9/KQ8QL637f/W29tDmv/6sy35F5zs+MD9f66nbAAIjicwc7fwyuF3rkg6PhZh4sfvWIpA==}
 
   es-module-lexer@1.7.0:
     resolution: {integrity: sha512-jEQoCwk8hyb2AZziIOLhDqpm5+2ww5uIE6lkO/6jcOCusfk6LhMHpXXfBLXTZ7Ydyt0j4VoUQv6uGNYbdW+kBA==}
@@ -817,14 +817,14 @@ snapshots:
 
   assertion-error@2.0.1: {}
 
-  aws-cdk-lib@2.232.1(constructs@10.4.3):
+  aws-cdk-lib@2.232.1(constructs@10.4.4):
     dependencies:
       '@aws-cdk/asset-awscli-v1': 2.2.242
       '@aws-cdk/asset-node-proxy-agent-v6': 2.1.0
       '@aws-cdk/cloud-assembly-schema': 48.20.0
-      constructs: 10.4.3
+      constructs: 10.4.4
 
-  aws-cdk@2.1033.0:
+  aws-cdk@2.1034.0:
     optionalDependencies:
       fsevents: 2.3.2
 
@@ -832,7 +832,7 @@ snapshots:
 
   chai@6.2.1: {}
 
-  constructs@10.4.3: {}
+  constructs@10.4.4: {}
 
   es-module-lexer@1.7.0: {}
 
