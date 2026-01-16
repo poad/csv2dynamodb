@@ -12,15 +12,15 @@
     "cdk": "cdk"
   },
   "devDependencies": {
-    "@types/node": "^25.0.8",
-    "aws-cdk": "^2.1100.3",
+    "@types/node": "^25.0.9",
+    "aws-cdk": "^2.1101.0",
     "pnpm": "^10.28.0",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3",
     "vitest": "^4.0.17"
   },
   "dependencies": {
-    "aws-cdk-lib": "^2.234.1",
+    "aws-cdk-lib": "^2.235.0",
     "constructs": "^10.4.4",
     "source-map-support": "^0.5.21"
   },
