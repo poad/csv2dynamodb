@@ -13,11 +13,11 @@
   },
   "devDependencies": {
     "@types/node": "^25.0.10",
-    "aws-cdk": "^2.1101.0",
+    "aws-cdk": "^2.1102.0",
     "pnpm": "^10.28.1",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3",
-    "vitest": "^4.0.17"
+    "vitest": "^4.0.18"
   },
   "dependencies": {
     "aws-cdk-lib": "^2.235.1",
