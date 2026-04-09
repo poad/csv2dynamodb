@@ -1,3 +1,30 @@
-enablePrePostScripts: true
-autoInstallPeers: true
-strictPeerDependencies: true
+packages:
+  - .
+
+minimumReleaseAge: 10080 # 7 days in minutes
+minimumReleaseAgeExclude:
+  - 'lodash@4.18.1'
+  - 'handlebars@4.7.9'
+  - '@rolldown/*'
+  - rolldown@1.0.0-rc.15
+  - '@oxc-project/*'
+  - '@napi-rs/wasm-runtime@1.1.3'
+  - esbuild@0.28.0
+  - '@esbuild/*'
+  - '@vitest/*'
+  - vitest@4.1.4
+  - vite@8.0.8
+
+overrides:
+  brace-expansion@<1.1.13: '>=1.1.13'
+  brace-expansion@>=2.0.0 <2.0.3: '>=2.0.3'
+  eslint-import-resolver-typescript: '>=4'
+  handlebars@>=4.0.0 <4.7.9: '>=4.7.9'
+  handlebars@>=4.0.0 <=4.7.8: '>=4.7.9'
+  handlebars@>=4.6.0 <=4.7.8: '>=4.7.9'
+  semver: '>=7'
+  vite@>=7.0.0 <=7.3.1: '>=7.3.2'
+  vite@>=7.1.0 <=7.3.1: '>=7.3.2'
+  vite@>=8.0.0 <=8.0.4: '>=8.0.5'
+
+trustPolicy: no-downgrade
