@@ -36,11 +36,10 @@ if [ $result -ne 0 ]; then
 fi
 echo ""
 pwd
-npx -y pnpm@latest self-update && pnpm install && pnpm up
-result=$?
-if [ $result -ne 0 ]; then
+
+if ! (npx -y pnpm@latest self-update latest-11 && pnpm install && pnpm up && pnpm audit --fix override && pnpm up && pnpm lint-fix && pnpm build && pnpm install --no-frozen-lockfile); then
   cd "${CUR}" || exit
-  exit $result
+  exit 1
 fi
 
 cd "${CURRENT}" || exit

@@ -4,7 +4,7 @@ import { RemovalPolicy } from 'aws-cdk-lib';
 import { Construct } from 'constructs';
 
 interface InfraStackProps extends cdk.StackProps {
-  name: string
+  readonly name: string
 }
 
 export class InfraStack extends cdk.Stack {
@@ -15,9 +15,9 @@ export class InfraStack extends cdk.Stack {
       tableName: props.name,
       partitionKey: {
         name: 'test',
-        type: AttributeType.STRING
+        type: AttributeType.STRING,
       },
-      removalPolicy: RemovalPolicy.DESTROY
+      removalPolicy: RemovalPolicy.DESTROY,
     });
   }
 }
