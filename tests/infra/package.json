@@ -18,7 +18,7 @@
     "@eslint/compat": "^2.1.0",
     "@eslint/js": "^10.0.1",
     "@stylistic/eslint-plugin": "^5.10.0",
-    "@types/node": "^24.12.4",
+    "@types/node": "^25.7.0",
     "@vitest/coverage-v8": "^4.1.6",
     "@vitest/eslint-plugin": "^1.6.17",
     "aws-cdk": "^2.1121.0",
