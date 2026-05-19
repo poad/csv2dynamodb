@@ -43,8 +43,8 @@ importers:
         specifier: ^4.4.4
         version: 4.4.4(eslint-plugin-import-x@4.16.2(@typescript-eslint/utils@8.59.3(eslint@10.3.0(jiti@2.7.0))(typescript@6.0.3))(eslint@10.3.0(jiti@2.7.0)))(eslint@10.3.0(jiti@2.7.0))
       eslint-plugin-awscdk:
-        specifier: ^4.3.2
-        version: 4.3.2(eslint@10.3.0(jiti@2.7.0))(typescript@6.0.3)
+        specifier: ^4.3.3
+        version: 4.3.3(eslint@10.3.0(jiti@2.7.0))(typescript@6.0.3)
       eslint-plugin-import-x:
         specifier: ^4.16.2
         version: 4.16.2(@typescript-eslint/utils@8.59.3(eslint@10.3.0(jiti@2.7.0))(typescript@6.0.3))(eslint@10.3.0(jiti@2.7.0))
@@ -828,8 +828,8 @@ packages:
       eslint-plugin-import-x:
         optional: true
 
-  eslint-plugin-awscdk@4.3.2:
-    resolution: {integrity: sha512-y+nLP0LND8NLsg2iDh59sUmZkz5B/OgX8nXMWvmx9w+n8UpsuOr4ReiKsmeOpwZxn7jx59O6ns7FmLWI4FVVbg==}
+  eslint-plugin-awscdk@4.3.3:
+    resolution: {integrity: sha512-5cjO/ZouH04KgKOVa58zdhB4B1ULXNVAcZoK6pTQaysvmTfwaZT+fag81bbyS3jPM4Q/G2HrVQLDApdF+mqdYQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       eslint: ^8.57.0 || ^9.0.0 || ^10.0.0
@@ -1990,7 +1990,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-awscdk@4.3.2(eslint@10.3.0(jiti@2.7.0))(typescript@6.0.3):
+  eslint-plugin-awscdk@4.3.3(eslint@10.3.0(jiti@2.7.0))(typescript@6.0.3):
     dependencies:
       eslint: 10.3.0(jiti@2.7.0)
       typescript: 6.0.3
