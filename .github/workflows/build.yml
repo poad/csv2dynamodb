@@ -21,7 +21,7 @@ jobs:
     steps:
       - name: Pull request auto merge enabler
         if: github.event_name == 'pull_request' && github.actor != 'dependabot[bot]'
-        uses: poad/github-pull-request-auto-merge-enable-action@v3.0.2
+        uses: poad/github-pull-request-auto-merge-enable-action@3a9b27f412592f0eb2cd6649509178e1fcaf3ccf # v3.0.2
         with:
           pull_request_number: ${{ github.event.pull_request.number }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
@@ -51,7 +51,9 @@ jobs:
       run: rustup update
     - name: Install cross
       run: cargo install cross
-    - uses: actions/checkout@v6
+    - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+      with:
+        persist-credentials: false
     - name: Build
       run: cargo build --verbose
     - name: Run tests

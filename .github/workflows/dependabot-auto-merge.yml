@@ -13,13 +13,6 @@ jobs:
     if: github.actor == 'dependabot[bot]'
 
     steps:
-      - uses: actions/checkout@v6
-      - name: Dependabot metadata
-        id: metadata
-        uses: dependabot/fetch-metadata@v3
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-
       - name: Enable auto-merge for Dependabot Dependabot Pull Request
         run: |
           gh pr review --approve "$PR_URL"
