@@ -19,5 +19,7 @@ export class InfraStack extends cdk.Stack {
       },
       removalPolicy: RemovalPolicy.DESTROY,
     });
+
+    cdk.Tags.of(this).add('Project', 'csv2dynamodb');
   }
 }

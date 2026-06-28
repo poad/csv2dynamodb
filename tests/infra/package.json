@@ -1,5 +1,5 @@
 {
-  "name": "infra",
+  "name": "@csv2dynamodb/infra",
   "version": "0.1.0",
   "bin": {
     "infra": "bin/infra.js"
@@ -18,10 +18,10 @@
     "@eslint/compat": "^2.1.0",
     "@eslint/js": "^10.0.1",
     "@stylistic/eslint-plugin": "^5.10.0",
-    "@types/node": "^25.9.3",
-    "@vitest/coverage-v8": "^4.1.8",
+    "@types/node": "^25.9.4",
+    "@vitest/coverage-v8": "^4.1.9",
     "@vitest/eslint-plugin": "^1.6.20",
-    "aws-cdk": "^2.1126.0",
+    "aws-cdk": "^2.1128.0",
     "eslint": "^10.5.0",
     "eslint-import-resolver-typescript": "^4.4.5",
     "eslint-plugin-awscdk": "^4.3.3",
@@ -30,13 +30,12 @@
     "jiti": "^2.7.0",
     "tsx": "^4.22.4",
     "typescript": "^6.0.3",
-    "typescript-eslint": "^8.61.0",
+    "typescript-eslint": "^8.61.1",
     "vite": "^8.0.16",
-    "vitest": "^4.1.8"
+    "vitest": "^4.1.9"
   },
   "dependencies": {
-    "aws-cdk-lib": "^2.259.0",
+    "aws-cdk-lib": "^2.260.0",
     "constructs": "^10.6.0"
-  },
-  "packageManager": "pnpm@11.5.2"
+  }
 }

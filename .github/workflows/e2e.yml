@@ -3,8 +3,14 @@ name: E2E Test
 on:
   push:
     branches: [ main ]
+    paths:
+      - 'src/**'
+      - 'Cargo.*'
   pull_request:
     branches: [ main ]
+    paths:
+      - 'src/**'
+      - 'Cargo.*'
 
   workflow_dispatch:
 
@@ -18,7 +24,7 @@ permissions:
 
 jobs:
   setup:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-slim
     outputs:
       table: ${{ steps.gen-table-name.outputs.table }}
 
@@ -27,29 +33,15 @@ jobs:
       with:
         persist-credentials: false
     
-    - name: Use Node.js
-      uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e # v6.4.0
-      with:
-        node-version: 'lts/*'
-        check-latest: true
-        package-manager-cache: false
-
-    - uses: pnpm/action-setup@0ebf47130e4866e96fce0953f49152a61190b271 # v6.0.9
-      name: Install pnpm
-      with:
-        package_json_file: tests/infra/package.json
-        run_install: |
-          - recursive: false
-            cwd: tests/infra
-            args: [--no-frozen-lockfile]
-          - args: [--global, aws-cdk]
+    - name: Install pnpm
+      uses: pnpm/setup@5d160c5bc68a09337ad0d5654e237e03253b5879 # v1.0.0
 
     - name: generate table name
       id: gen-table-name
       run: echo "table=csv2dynamodb-test-$(date +%Y%m%d-%H%M%S)" >> $GITHUB_OUTPUT
 
     - name: configure aws credentials
-      uses: aws-actions/configure-aws-credentials@e7f100cf4c008499ea8adda475de1042d6975c7b # v6.2.0
+      uses: aws-actions/configure-aws-credentials@254c19bd240aabef8777f48595e9d2d7b972184b # v6.2.1
       with:
         role-to-assume: ${{ secrets.AWS_OIDC_ROLE_ARN }}
         role-session-name: GitHubActions
@@ -59,15 +51,15 @@ jobs:
       env:
         TABLE_NAME: ${{ steps.gen-table-name.outputs.table }}
       working-directory: tests/infra
-      run: cdk deploy -c name="${TABLE_NAME}" --require-approval=never
+      run: pnpm dlx aws-cdk@latest deploy -c name="${TABLE_NAME}" --require-approval=never
 
   test:
     needs: [setup]
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
 
     steps:
     - name: Configure AWS Credentials
-      uses: aws-actions/configure-aws-credentials@e7f100cf4c008499ea8adda475de1042d6975c7b # v6.2.0
+      uses: aws-actions/configure-aws-credentials@254c19bd240aabef8777f48595e9d2d7b972184b # v6.2.1
       with:
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY }}
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
@@ -80,39 +72,24 @@ jobs:
       run: cargo run --verbose -- --file-path ./tests/test_data2.csv --table ${{ needs.setup.outputs.table }}
 
   tearDown:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-slim
     needs: [setup, test]
     if: ${{ always() }}
     steps:
     - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
 
-    - name: Use Node.js 22.x
-      uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e # v6.4.0
-      with:
-        node-version: 22.x
-        check-latest: true
-        package-manager-cache: false
+    - name: Install pnpm
+      uses: pnpm/setup@5d160c5bc68a09337ad0d5654e237e03253b5879 # v1.0.0
 
-    - uses: pnpm/action-setup@0ebf47130e4866e96fce0953f49152a61190b271 # v6.0.9
-      name: Install pnpm
-      with:
-        package_json_file: tests/infra/package.json
-        run_install: |
-          - recursive: false
-            cwd: tests/infra
-            args: [--no-frozen-lockfile]
-
-    - name: Install AWS CDK and pnpm
-      run: |
-        npm -g i npm aws-cdk
     - name: configure aws credentials
-      uses: aws-actions/configure-aws-credentials@e7f100cf4c008499ea8adda475de1042d6975c7b # v6.2.0
+      uses: aws-actions/configure-aws-credentials@254c19bd240aabef8777f48595e9d2d7b972184b # v6.2.1
       with:
         role-to-assume: ${{ secrets.AWS_OIDC_ROLE_ARN }}
         role-session-name: GitHubActions
         aws-region: ${{ env.AWS_REGION }}
+
     - name: Remove for testing table
       env:
         TABLE_NAME: ${{ needs.setup.outputs.table }}
       working-directory: tests/infra
-      run: cdk destroy -c name="${TABLE_NAME}" -f
+      run: pnpm dlx aws-cdk@latest destroy -c name="${TABLE_NAME}" -f
