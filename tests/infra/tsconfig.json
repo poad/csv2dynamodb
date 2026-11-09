@@ -2,9 +2,7 @@
   "compilerOptions": {
     "target": "esnext",
     "module": "esnext",
-    "lib": [
-      "esnext"
-    ],
+    "lib": ["esnext"],
     "moduleResolution": "bundler",
     "declaration": true,
     "strict": true,
@@ -21,15 +19,8 @@
     "experimentalDecorators": true,
     "strictPropertyInitialization": false,
     "noEmit": true,
-    "typeRoots": [
-      "./node_modules/@types"
-    ],
+    "typeRoots": ["./node_modules/@types"],
     "types": ["node"]
   },
-  "exclude": [
-    "node_modules",
-    "cdk.out",
-    "eslint.config.ts",
-    "vitest.config.ts"
-  ]
+  "exclude": ["node_modules", "cdk.out", "eslint.config.ts", "vitest.config.ts"]
 }

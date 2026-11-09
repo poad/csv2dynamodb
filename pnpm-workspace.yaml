@@ -11,12 +11,6 @@ blockExoticSubdeps: true
 minimumReleaseAge: 10080 # 7 days in minutes
 
 minimumReleaseAgeExclude:
-  - pnpm@11.9.0
-  - nanoid@3.3.15
-
-overrides:
-  esbuild@>=0.17.0 <0.28.1: ^0.28.1
-  esbuild@>=0.27.3 <0.28.1: ^0.28.1
-  nanoid: ^3.3.15
+  - pnpm@12.18.0
 
 trustPolicy: no-downgrade
