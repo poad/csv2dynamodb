@@ -11,6 +11,6 @@ blockExoticSubdeps: true
 minimumReleaseAge: 10080 # 7 days in minutes
 
 minimumReleaseAgeExclude:
-  - pnpm@12.18.0
+  - pnpm@12.19.0
 
 trustPolicy: no-downgrade
